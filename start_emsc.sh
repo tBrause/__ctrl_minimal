@@ -1,0 +1,17 @@
+#!/bin/sh
+
+sudo ip link set can0 down
+sudo ip link set can0 type can bitrate 250000
+sudo ip link set can0 up
+sudo ifconfig can0 txqueuelen 200
+sudo ifconfig can0 up
+
+LOG='/home/'$USER'/data/'
+
+cd '/home/'$USER'/execute'
+
+sudo chmod +x emsc2.0.9.12
+
+sudo ./emsc2.0.9.12 -t 0 -D can0 -p 5555 >$LOG'emsc.log' &
+
+exit 0
