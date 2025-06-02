@@ -8,6 +8,10 @@ sudo ifconfig can0 up
 
 LOG='/home/'$USER'/data/'
 
+if [ ! -d "$LOG" ]; then
+mkdir -p "$LOG"
+fi
+
 cd '/home/'$USER'/execute'
 
 if [ ! -x "emsc2.0.9.12" ]; then
