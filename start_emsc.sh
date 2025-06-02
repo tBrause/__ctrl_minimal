@@ -6,13 +6,13 @@ sudo ip link set can0 up
 sudo ifconfig can0 txqueuelen 200
 sudo ifconfig can0 up
 
-LOG='/home/'$USER'/data/'
+LOG='/home/'$USER'/__ctrl_minimal/data/'
 
 if [ ! -d "$LOG" ]; then
 mkdir -p "$LOG"
 fi
 
-cd '/home/'$USER'/execute'
+cd '/home/'$USER'/__ctrl_minimal/execute'
 
 if [ ! -x "emsc2.0.9.12" ]; then
 sudo chmod +x emsc2.0.9.12
