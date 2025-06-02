@@ -10,7 +10,10 @@ LOG='/home/'$USER'/data/'
 
 cd '/home/'$USER'/execute'
 
+if [ ! -x "emsc2.0.9.12" ]; then
 sudo chmod +x emsc2.0.9.12
+exit 1
+fi
 
 sudo ./emsc2.0.9.12 -t 0 -D can0 -p 5555 >$LOG'emsc.log' &
 
