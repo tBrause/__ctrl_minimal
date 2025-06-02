@@ -1,3 +1,5 @@
+# WICHTIG: Diese Dokumentation ist ein Entwurf und wird laufend aktualisiert. Sie dient als Grundlage für die Entwicklung des EnergyWAN-Projekts.
+
 # Systemkomponenten
 
 - Eigenes CTRL BASEBORD mit CAN MCP2515 Chip. Auf diesem Board sind ausserdem ein SIM7000E NB-IoT HAT und ein Waveshare CM4-IO-BASE-A verbaut. Diese sind über die RPI GPIOs verbunden.
