@@ -4,6 +4,7 @@
 if pgrep -x "emsc2.0.9.12" > /dev/null; then
 echo "Killing EMSC process..."
 pkill -f "emsc2.0.9.12"
+sleep 2
 else
 echo "EMSC process is not running."
 fi
