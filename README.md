@@ -4,15 +4,31 @@
 
 > Stammverzeichnis: /home/pi/__ctrl_minimal/
 
+> Logdateien: /home/pi/__ctrl_minimal/data/
+
+> Dokumentationen: /home/pi/__ctrl_minimal/docs/
+
 - data/
+- docs/
+  - can-explorer/
+    - etaet.js
+    - List_of_events.txt
+    - Protection_event.txt
+    - Readme.md
+    - special_event.txt
+  - emsc/
+    - emsc2_0.html
+  - eta_et/
+    - et_adapter_0.html
+    - et_adapter_1.html
 - execute/
   - emsc2.0.9.12
 - tools/
   - can_logger
     - can_logger.cpp
-- et_adapter_0.html
 - kill_emsc.sh
 - pgrep_emsc.sh
+- README.md
 - start_emsc.sh
 
 # Systemkomponenten
@@ -96,108 +112,3 @@ Zur Referenz diente das bestehende Programmpaket **emsc2.0.9.12**, das erfolgrei
 Auf dieser Basis wird das neue Modul **EnergyCAN** entwickelt, das die gleiche CAN-Datenstruktur verwendet, aber als eigene Implementierung (statt `emsc`) ausgelegt ist.
 
 Ziel: Kompatible, stabile CAN-Kommunikation mit dem Batteriesystem, unabhängig vom ursprünglichen Programmpaket.
-
-# Verzeichnisstruktur
-
-> Stammverzeichnis: /home/pi
-
-- EnergyWAN
-  - common
-    - Batteries
-      - Batteries.cpp
-      - Batteries.h
-    - CANlist
-      - CANlist.cpp
-      - CANlist.h
-    - FileProps
-      - FileProps.cpp
-      - FileProps.h
-    - SharedMem
-      - EmulateSHM.cpp
-      - EmulateSHM.h
-      - SharedMem.cpp
-      - SharedMem.h
-    - Utilities
-      - Utilities.cpp
-      - Utilities.h
-    - typedefs.h
-  - config
-    - CANlist.txt
-    - confBatt.json
-    - confCAN.json
-    - confCert.json
-    - confDevice.json
-    - confOBJlist.json
-    - confSHM.json
-    - confSIM.json
-  - EnergyCAN
-    - obj
-      - Batteries.o
-      - CANlist.o
-      - ConfHandler.o
-      - DebugUtils.o
-      - EmscManager.o
-      - EnergyCAN.o
-      - FileProps.o
-      - SharedMem.o
-      - Utilities.o
-    - ConfHandler.cpp
-    - ConfHandler.h
-    - DebugUtils.cpp
-    - DebugUtils.h
-    - defines.h
-    - EmscManager.cpp
-    - EmscManager.h
-    - EnergyCAN
-    - EnergyCAN.cpp
-    - EnergyCAN.h
-    - Makefile
-  - EnergySIM
-    - cert
-    - obj
-      - Batteries.o
-      - BuildJSON.o
-      - CANlist.o
-      - CANvalues.o
-      - EnergySIM.o
-      - FileProps.o
-      - ParseJSON.o
-      - rpiGPIO.o
-      - SharedMem.o
-      - sim7x00.o
-      - simGPS.o
-      - SIMhelp.o
-      - Utilities.o
-    - BuildJSON.cpp
-    - BuildJSON.h
-    - CANvalues.cpp
-    - CANvalues.h
-    - certs.h
-    - defines.h
-    - EnergySIM
-    - EnergySIM.cpp
-    - EnergySIM.h
-    - Makefile
-    - ParseJSON.cpp
-    - ParseJSON.h
-    - rpiGPIO.cpp
-    - rpiGPIO.h
-    - sim7x00.cpp
-    - sim7x00.h
-    - simGPS.cpp
-    - simGPS.h
-    - SIMhelp.cpp
-    - SIMhelp.h
-    - test
-    - VariantSHM.h
-    - waveLicence.h
-  - execute
-    - emsc2.0.9.12
-    - EnergyCAN
-    - EnergySIM
-    - Version.txt
-- et_adapter_0.html
-- et_adapter_1.html
-- pgrepall
-- README.md
-- startall
