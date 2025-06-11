@@ -1,0 +1,54 @@
+
+--- ETA2 Abfrage am 2025-06-11 21:13:30 ---
+act. voltage (0x6040:1): 52290 (raw) = 52.290 V
+act. external voltage (0x6039:1): 52124 (raw) = 52.124 V
+act. current (0x603e:1): Keine Antwort oder Timeout!
+act. elect. temp (0x6042:1): 416 (raw) = 41.600 °C
+SOC (0x6164:1): Keine Antwort oder Timeout!
+SOH (0x6176:1): Keine Antwort oder Timeout!
+
+
+--- ETA2 Abfrage am 2025-06-11 21:13:54 ---
+act. voltage (0x6040:1): 52290 (raw) = 52.290 V
+act. external voltage (0x6039:1): 52100 (raw) = 52.100 V
+act. current (0x603e:1): Keine Antwort oder Timeout!
+act. elect. temp (0x6042:1): 384 (raw) = 38.400 °C
+SOC (0x6164:1): Keine Antwort oder Timeout!
+SOH (0x6176:1): 385 (raw) = 3.850 %
+
+
+--- ETA2 Abfrage am 2025-06-11 21:17:18 ---
+act. voltage (0x6040:1): 52268 (raw) = 52.268 V
+act. external voltage (0x6039:1): 52100 (raw) = 52.100 V
+act. current (0x603e:1): Keine Antwort oder Timeout!
+act. elect. temp (0x6042:1): 416 (raw) = 41.600 °C
+SOC (0x6164:1): Keine Antwort oder Timeout!
+SOH (0x6176:1): 385 (raw) = 3.850 %
+
+
+--- ETA2 Abfrage am 2025-06-11 21:18:15 ---
+act. voltage (0x6040:1): 52314 (raw) = 52.314 V
+act. external voltage (0x6039:1): 52100 (raw) = 52.100 V
+act. current (0x603e:1): Keine Antwort oder Timeout!
+act. elect. temp (0x6042:1): 416 (raw) = 41.600 °C
+SOC (0x6164:1): Keine Antwort oder Timeout!
+SOH (0x6176:1): Keine Antwort oder Timeout!
+
+
+--- ETA2 Abfrage am 2025-06-11 21:22:51 ---
+act. voltage (0x6040:1): 52268 (raw) = 52.268 V
+act. external voltage (0x6039:1): 52100 (raw) = 52.100 V
+act. current (0x603e:1): Keine Antwort oder Timeout!
+act. elect. temp (0x6042:1): 416 (raw) = 41.600 °C
+SOC (0x6164:1): Keine Antwort oder Timeout!
+SOH (0x6176:1): Keine Antwort oder Timeout!
+
+
+--- ETA2 Abfrage am 2025-06-11 21:44:15 ---
+act. voltage (0x6040:1): 52290 (raw) = 52.290 V
+act. external voltage (0x6039:1): 52100 (raw) = 52.100 V
+act. current (0x603e:1): Keine Antwort oder Timeout!
+act. elect. temp (0x6042:1): 416 (raw) = 41.600 °C
+SOC (0x6164:1): Keine Antwort oder Timeout!
+SOH (0x6176:1): 385 (raw) = 3.850 %
+
