@@ -11,11 +11,6 @@
 #include <linux/can.h>
 #include <linux/can/raw.h>
 
-bool isPDO(uint32_t can_id)
-{
-    return (can_id >= 0x190 && can_id <= 0x1FF);
-}
-
 std::string currentTimestamp()
 {
     std::time_t now = std::time(nullptr);
@@ -24,26 +19,71 @@ std::string currentTimestamp()
     return std::string(buf);
 }
 
+std::string deviceName(uint32_t can_id)
+{
+    switch (can_id)
+    {
+    case 0x192:
+        return "ETA 2";
+    case 0x193:
+        return "ETA 3";
+    case 0x194:
+        return "ETA 4";
+    case 0x195:
+        return "ETA 5";
+    case 0x196:
+        return "ETA 6";
+    case 0x197:
+        return "ETA 7";
+    default:
+    {
+        std::ostringstream oss;
+        oss << "CAN 0x" << std::hex << can_id;
+        return oss.str();
+    }
+    }
+}
+
+// Statuswert zu Klartext (wie im DeviceExplorer)
+std::string stateText(uint16_t state)
+{
+    if (state == 0x8080)
+        return "Ready-to-Attach";
+    if (state == 0x80C0)
+        return "Normal Operation";
+    if (state == 0x8040)
+        return "Do-Not-Attach";
+    if (state == 0x4040)
+        return "Comp. Check / Do-Not-Attach";
+    if (state == 0x0000)
+        return "Aus / Unbekannt";
+    std::ostringstream oss;
+    oss << "Unbekannt (0x" << std::hex << state << ")";
+    return oss.str();
+}
+
 std::string decodePDO(const can_frame &frame)
 {
     if (frame.can_dlc < 8)
         return "Unvollständiger Frame";
 
-    uint16_t status = frame.data[1] << 8 | frame.data[0];
-    uint16_t voltage_raw = frame.data[3] << 8 | frame.data[2];
-    uint16_t temp_raw = frame.data[5] << 8 | frame.data[4];
+    // Byte-Order: little-endian!
+    uint16_t state = frame.data[1] << 8 | frame.data[0];
+    uint16_t voltage_r = frame.data[3] << 8 | frame.data[2];
+    uint16_t temp_r = frame.data[5] << 8 | frame.data[4];
     uint16_t counter = frame.data[7] << 8 | frame.data[6];
 
-    // Angepasste Skalierungsfaktoren basierend auf deinem Beispiel
-    double voltage = voltage_raw / 122.0;  // z. B. 6498 → ~53.2 V
-    double temperature = temp_raw / 185.0; // z. B. 6500 → ~35.1 °C
+    // Faktoren nach deinen Live-Werten – bitte weiter anpassen falls nötig!
+    double voltage = voltage_r / 122.0;  // z.B. 6498 → ~53.3 V
+    double temperature = temp_r / 185.0; // z.B. 6500 → ~35.1 °C
 
     std::ostringstream oss;
-    oss << "Status: 0x" << std::hex << std::setw(4) << std::setfill('0') << status
+    oss << "State: " << stateText(state)
+        << " (" << std::hex << "0x" << state << std::dec << ")"
         << ", Spannung: " << std::fixed << std::setprecision(2) << voltage << " V"
         << ", Temperatur: " << std::fixed << std::setprecision(1) << temperature << " °C"
-        << ", Zähler: " << std::dec << counter
-        << " (Raw: V=" << voltage_raw << ", T=" << temp_raw << ")";
+        << ", Zähler: " << counter
+        << " (Raw: V=" << voltage_r << ", T=" << temp_r << ")";
     return oss.str();
 }
 
@@ -83,7 +123,7 @@ int main()
         return 1;
     }
 
-    std::cout << "Starte PDO-Decoder (IDs 0x190–0x1FF), Ausgabe in " << logfile_name << "\n";
+    std::cout << "Starte PDO-Klartext-Decoder (IDs 0x192–0x197), Ausgabe in " << logfile_name << "\n";
 
     struct can_frame frame;
     while (true)
@@ -95,12 +135,12 @@ int main()
             break;
         }
 
-        if (isPDO(frame.can_id))
+        if (frame.can_id >= 0x192 && frame.can_id <= 0x197)
         {
             std::string decoded = decodePDO(frame);
             std::ostringstream output;
             output << currentTimestamp()
-                   << "  ID: 0x" << std::hex << std::setw(3) << std::setfill('0') << frame.can_id
+                   << "  " << deviceName(frame.can_id)
                    << "  " << decoded;
 
             std::string line = output.str();
