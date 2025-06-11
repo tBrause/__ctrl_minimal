@@ -1,7 +1,7 @@
 #include <iostream>
-#include <fstream>
 #include <iomanip>
 #include <sstream>
+#include <fstream>
 #include <cstring>
 #include <ctime>
 #include <unistd.h>
@@ -11,6 +11,7 @@
 #include <linux/can.h>
 #include <linux/can/raw.h>
 
+// Zeitstempel als String
 std::string currentTimestamp()
 {
     std::time_t now = std::time(nullptr);
@@ -19,6 +20,7 @@ std::string currentTimestamp()
     return std::string(buf);
 }
 
+// Zuordnung CAN-ID zu ETA-Name
 std::string deviceName(uint32_t can_id)
 {
     switch (can_id)
@@ -44,7 +46,7 @@ std::string deviceName(uint32_t can_id)
     }
 }
 
-// Statuswert zu Klartext (wie im DeviceExplorer)
+// Status-Klartext für typische Codes
 std::string stateText(uint16_t state)
 {
     if (state == 0x8080)
@@ -55,35 +57,37 @@ std::string stateText(uint16_t state)
         return "Do-Not-Attach";
     if (state == 0x4040)
         return "Comp. Check / Do-Not-Attach";
-    if (state == 0x0000)
-        return "Aus / Unbekannt";
     std::ostringstream oss;
-    oss << "Unbekannt (0x" << std::hex << state << ")";
+    oss << "0x" << std::hex << state;
     return oss.str();
 }
 
+// Hauptdekodierung
 std::string decodePDO(const can_frame &frame)
 {
     if (frame.can_dlc < 8)
         return "Unvollständiger Frame";
 
-    // Byte-Order: little-endian!
-    uint16_t state = frame.data[1] << 8 | frame.data[0];
-    uint16_t voltage_r = frame.data[3] << 8 | frame.data[2];
-    uint16_t temp_r = frame.data[5] << 8 | frame.data[4];
-    uint16_t counter = frame.data[7] << 8 | frame.data[6];
+    // Rohdaten
+    uint16_t status = frame.data[1] << 8 | frame.data[0];
+    uint16_t object_code = frame.data[3] << 8 | frame.data[2];
+    uint16_t voltage_raw = frame.data[5] << 8 | frame.data[4];
+    uint16_t temp_raw = frame.data[7] << 8 | frame.data[6];
 
-    // Faktoren nach deinen Live-Werten – bitte weiter anpassen falls nötig!
-    double voltage = voltage_r / 122.0;  // z.B. 6498 → ~53.3 V
-    double temperature = temp_r / 185.0; // z.B. 6500 → ~35.1 °C
+    // Werte mit Annahmen zur Skalierung
+    double voltage = voltage_raw / 1000.0; // z.B. 51788 -> 51.788 V
+    double temperature = temp_raw / 100.0; // TESTWEISE: z.B. 4736 -> 47.36 °C (Skalierung anpassen, falls abweichend)
 
     std::ostringstream oss;
-    oss << "State: " << stateText(state)
-        << " (" << std::hex << "0x" << state << std::dec << ")"
-        << ", Spannung: " << std::fixed << std::setprecision(2) << voltage << " V"
-        << ", Temperatur: " << std::fixed << std::setprecision(1) << temperature << " °C"
-        << ", Zähler: " << counter
-        << " (Raw: V=" << voltage_r << ", T=" << temp_r << ")";
+    oss << "Status: " << stateText(status)
+        << ", ObjectCode: 0x" << std::hex << object_code
+        << ", Spannung: " << std::fixed << std::setprecision(3) << voltage << " V"
+        << ", Temperatur: " << std::fixed << std::setprecision(2) << temperature << " C"
+        << " (Raw: V=" << voltage_raw << ", T=" << temp_raw << ") | Payload: ";
+    for (int i = 0; i < 8; ++i)
+    {
+        oss << std::hex << std::setw(2) << std::setfill('0') << (int)frame.data[i] << " ";
+    }
     return oss.str();
 }
 
