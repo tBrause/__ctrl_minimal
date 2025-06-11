@@ -1,0 +1,7083 @@
+[FileInfo]
+CreatedBy=F.Jungandreas, SYS TEC electronic AG
+ModifiedBy=D. Glau, SYS TEC electronic AG
+Description=SYS TEC IEC61131-3 PLC C14 for CAN0
+CreationTime=11:01AM
+CreationDate=10-09-2019
+ModificationTime=11:01AM
+ModificationDate=10-09-2019
+FileName=PLCmodule-C14_CAN0.eds
+FileVersion=1
+FileRevision=104
+EDSVersion=4.1
+
+[DeviceInfo]
+VendorName=SYS TEC electronic AG
+VendorNumber=63
+ProductName=SYS TEC PLCmodule-C14 (CAN0)
+ProductNumber=0
+RevisionNumber=0
+OrderCode=phyPS-412-Z5
+BaudRate_10=1
+BaudRate_20=1
+BaudRate_50=1
+BaudRate_125=1
+BaudRate_250=1
+BaudRate_500=1
+BaudRate_800=0
+BaudRate_1000=1
+SimpleBootUpMaster=0
+SimpleBootUpSlave=1
+Granularity=8
+DynamicChannelsSupported=3
+CompactPDO=23
+GroupMessaging=0
+NrOfRXPDO=64
+NrOfTXPDO=64
+LSS_Supported=0
+
+[DummyUsage]
+Dummy0001=0
+Dummy0002=0
+Dummy0003=0
+Dummy0004=0
+Dummy0005=1
+Dummy0006=1
+Dummy0007=1
+
+[Comments]
+Lines=2
+Line1=SYS TEC PLCmodule-C14
+Line2=CANopen Instance 0, dynamic PDO mapping
+
+[MandatoryObjects]
+SupportedObjects=3
+1=0x1000
+2=0x1001
+3=0x1018
+
+[1000]
+ParameterName=Device Type
+ObjectType=0x7
+DataType=0x0007
+AccessType=const
+DefaultValue=405
+PDOMapping=0
+
+[1001]
+ParameterName=Error Register
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x0
+PDOMapping=0
+
+[1018]
+ParameterName=Identity Object
+ObjectType=0x9
+SubNumber=5
+
+[1018sub0]
+ParameterName=number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x4
+PDOMapping=0
+
+[1018sub1]
+ParameterName=Vendor ID
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+DefaultValue=63
+PDOMapping=0
+
+[1018sub2]
+ParameterName=Product code
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+
+[1018sub3]
+ParameterName=Revision number
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+
+[1018sub4]
+ParameterName=Serial number
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+DefaultValue=0x0
+PDOMapping=0
+
+[OptionalObjects]
+SupportedObjects=45
+1=0x1003
+2=0x1005
+3=0x1006
+4=0x1007
+5=0x1008
+6=0x1009
+7=0x100A
+8=0x1014
+9=0x1016
+10=0x1017
+11=0x102A
+12=0x1200
+13=0x1201
+14=0x1202
+15=0x1203
+16=0x1204
+17=0x1280
+18=0x1281
+19=0x1282
+20=0x1283
+21=0x1284
+22=0x1285
+23=0x1286
+24=0x1287
+25=0x1288
+26=0x1400
+27=0x1401
+28=0x1402
+29=0x1600
+30=0x1601
+31=0x1602
+32=0x1800
+33=0x1801
+34=0x1802
+35=0x1A00
+36=0x1A01
+37=0x1A02
+38=0x1F22
+39=0x1F25
+40=0x1F80
+41=0x1F81
+42=0x1F82
+43=0x1F83
+44=0x1F89
+45=0x9860
+
+[1003]
+ParameterName=Pre-defined Error Field
+ObjectType=0x8
+SubNumber=6
+
+[1003sub0]
+ParameterName=number of errors
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+LowLimit=0x0
+HighLimit=0xFE
+
+[1003sub1]
+ParameterName=standard error field 01
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub2]
+ParameterName=standard error field 02
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub3]
+ParameterName=standard error field 03
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub4]
+ParameterName=standard error field 04
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1003sub5]
+ParameterName=standard error field 05
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1005]
+ParameterName=COB-ID SYNC
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x80
+PDOMapping=0
+
+[1006]
+ParameterName=Cycle Period
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1007]
+ParameterName=Window Length
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1008]
+ParameterName=Device Name
+ObjectType=0x7
+DataType=0x0009
+AccessType=const
+PDOMapping=0
+
+[1009]
+ParameterName=Hardware Version
+ObjectType=0x7
+DataType=0x0009
+AccessType=const
+PDOMapping=0
+
+[100A]
+ParameterName=Software Version
+ObjectType=0x7
+DataType=0x0009
+AccessType=const
+PDOMapping=0
+
+[1014]
+ParameterName=COB-ID Emergency message
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=$NODEID+0x00000080
+PDOMapping=0
+
+[1016]
+ParameterName=Heartbeat Consumer
+ObjectType=0x8
+SubNumber=65
+
+[1016sub0]
+ParameterName=number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x40
+PDOMapping=0
+
+[1016sub1]
+ParameterName=Consumer Heartbeat Time 01
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub2]
+ParameterName=Consumer Heartbeat Time 02
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub3]
+ParameterName=Consumer Heartbeat Time 03
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub4]
+ParameterName=Consumer Heartbeat Time 04
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub5]
+ParameterName=Consumer Heartbeat Time 05
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub6]
+ParameterName=Consumer Heartbeat Time 06
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub7]
+ParameterName=Consumer Heartbeat Time 07
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub8]
+ParameterName=Consumer Heartbeat Time 08
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub9]
+ParameterName=Consumer Heartbeat Time 09
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016subA]
+ParameterName=Consumer Heartbeat Time 10
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016subB]
+ParameterName=Consumer Heartbeat Time 11
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016subC]
+ParameterName=Consumer Heartbeat Time 12
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016subD]
+ParameterName=Consumer Heartbeat Time 13
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016subE]
+ParameterName=Consumer Heartbeat Time 14
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016subF]
+ParameterName=Consumer Heartbeat Time 15
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub10]
+ParameterName=Consumer Heartbeat Time 16
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub11]
+ParameterName=Consumer Heartbeat Time 17
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub12]
+ParameterName=Consumer Heartbeat Time 18
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub13]
+ParameterName=Consumer Heartbeat Time 19
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub14]
+ParameterName=Consumer Heartbeat Time 20
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub15]
+ParameterName=Consumer Heartbeat Time 21
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub16]
+ParameterName=Consumer Heartbeat Time 22
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub17]
+ParameterName=Consumer Heartbeat Time 23
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub18]
+ParameterName=Consumer Heartbeat Time 24
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub19]
+ParameterName=Consumer Heartbeat Time 25
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub1A]
+ParameterName=Consumer Heartbeat Time 26
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub1B]
+ParameterName=Consumer Heartbeat Time 27
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub1C]
+ParameterName=Consumer Heartbeat Time 28
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub1D]
+ParameterName=Consumer Heartbeat Time 29
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub1E]
+ParameterName=Consumer Heartbeat Time 30
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub1F]
+ParameterName=Consumer Heartbeat Time 31
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub20]
+ParameterName=Consumer Heartbeat Time 32
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub21]
+ParameterName=Consumer Heartbeat Time 33
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub22]
+ParameterName=Consumer Heartbeat Time 34
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub23]
+ParameterName=Consumer Heartbeat Time 35
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub24]
+ParameterName=Consumer Heartbeat Time 36
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub25]
+ParameterName=Consumer Heartbeat Time 37
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub26]
+ParameterName=Consumer Heartbeat Time 38
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub27]
+ParameterName=Consumer Heartbeat Time 39
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub28]
+ParameterName=Consumer Heartbeat Time 40
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub29]
+ParameterName=Consumer Heartbeat Time 41
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub2A]
+ParameterName=Consumer Heartbeat Time 42
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub2B]
+ParameterName=Consumer Heartbeat Time 43
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub2C]
+ParameterName=Consumer Heartbeat Time 44
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub2D]
+ParameterName=Consumer Heartbeat Time 45
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub2E]
+ParameterName=Consumer Heartbeat Time 46
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub2F]
+ParameterName=Consumer Heartbeat Time 47
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub30]
+ParameterName=Consumer Heartbeat Time 48
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub31]
+ParameterName=Consumer Heartbeat Time 49
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub32]
+ParameterName=Consumer Heartbeat Time 50
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub33]
+ParameterName=Consumer Heartbeat Time 51
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub34]
+ParameterName=Consumer Heartbeat Time 52
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub35]
+ParameterName=Consumer Heartbeat Time 53
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub36]
+ParameterName=Consumer Heartbeat Time 54
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub37]
+ParameterName=Consumer Heartbeat Time 55
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub38]
+ParameterName=Consumer Heartbeat Time 56
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub39]
+ParameterName=Consumer Heartbeat Time 57
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub3A]
+ParameterName=Consumer Heartbeat Time 58
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub3B]
+ParameterName=Consumer Heartbeat Time 59
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub3C]
+ParameterName=Consumer Heartbeat Time 60
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub3D]
+ParameterName=Consumer Heartbeat Time 61
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub3E]
+ParameterName=Consumer Heartbeat Time 62
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub3F]
+ParameterName=Consumer Heartbeat Time 63
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1016sub40]
+ParameterName=Consumer Heartbeat Time 64
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1017]
+ParameterName=Producer Heartbeat Time
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[102A]
+ParameterName=Nmt_Inhibit_Time
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1200]
+ParameterName=Server SDO parameter 01
+ObjectType=0x9
+SubNumber=3
+
+[1200sub0]
+ParameterName=number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x2
+PDOMapping=0
+
+[1200sub1]
+ParameterName=COB-ID Client->Server(rx)
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+DefaultValue=$NODEID+0x600
+PDOMapping=0
+
+[1200sub2]
+ParameterName=COB-ID Server->Client(tx)
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+DefaultValue=$NODEID+0x580
+PDOMapping=0
+
+[1201]
+ParameterName=Server SDO parameter 02
+ObjectType=0x9
+SubNumber=4
+
+[1201sub0]
+ParameterName=number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x3
+PDOMapping=0
+LowLimit=0x3
+HighLimit=0x3
+
+[1201sub1]
+ParameterName=COB-ID Client->Server(rx)
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1201sub2]
+ParameterName=COB-ID Server->Client(tx)
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1201sub3]
+ParameterName=NodeID of the SDO Client
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x1
+PDOMapping=0
+LowLimit=0x1
+HighLimit=0x7F
+
+[1202]
+ParameterName=Server SDO parameter 03
+ObjectType=0x9
+SubNumber=4
+
+[1202sub0]
+ParameterName=number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x3
+PDOMapping=0
+LowLimit=0x3
+HighLimit=0x3
+
+[1202sub1]
+ParameterName=COB-ID Client->Server(rx)
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1202sub2]
+ParameterName=COB-ID Server->Client(tx)
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1202sub3]
+ParameterName=NodeID of the SDO Client
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x1
+PDOMapping=0
+LowLimit=0x1
+HighLimit=0x7F
+
+[1203]
+ParameterName=Server SDO parameter 04
+ObjectType=0x9
+SubNumber=4
+
+[1203sub0]
+ParameterName=number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x3
+PDOMapping=0
+LowLimit=0x3
+HighLimit=0x3
+
+[1203sub1]
+ParameterName=COB-ID Client->Server(rx)
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1203sub2]
+ParameterName=COB-ID Server->Client(tx)
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1203sub3]
+ParameterName=NodeID of the SDO Client
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x1
+PDOMapping=0
+LowLimit=0x1
+HighLimit=0x7F
+
+[1204]
+ParameterName=Server SDO parameter 05
+ObjectType=0x9
+SubNumber=4
+
+[1204sub0]
+ParameterName=number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x3
+PDOMapping=0
+LowLimit=0x3
+HighLimit=0x3
+
+[1204sub1]
+ParameterName=COB-ID Client->Server(rx)
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1204sub2]
+ParameterName=COB-ID Server->Client(tx)
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1204sub3]
+ParameterName=NodeID of the SDO Client
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x1
+PDOMapping=0
+LowLimit=0x1
+HighLimit=0x7F
+
+[1280]
+ParameterName=Client SDO parameter 01
+ObjectType=0x9
+SubNumber=4
+
+[1280sub0]
+ParameterName=number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x3
+PDOMapping=0
+LowLimit=0x3
+HighLimit=0x3
+
+[1280sub1]
+ParameterName=COB-ID Client->Server(tx)
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1280sub2]
+ParameterName=COB-ID Server->Client(rx)
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1280sub3]
+ParameterName=NodeID of the SDO Server
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x1
+PDOMapping=0
+LowLimit=0x1
+HighLimit=0x7F
+
+[1281]
+ParameterName=Client SDO parameter 02
+ObjectType=0x9
+SubNumber=4
+
+[1281sub0]
+ParameterName=number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x3
+PDOMapping=0
+LowLimit=0x3
+HighLimit=0x3
+
+[1281sub1]
+ParameterName=COB-ID Client->Server(tx)
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1281sub2]
+ParameterName=COB-ID Server->Client(rx)
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1281sub3]
+ParameterName=NodeID of the SDO Server
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x1
+PDOMapping=0
+LowLimit=0x1
+HighLimit=0x7F
+
+[1282]
+ParameterName=Client SDO parameter 03
+ObjectType=0x9
+SubNumber=4
+
+[1282sub0]
+ParameterName=number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x3
+PDOMapping=0
+LowLimit=0x3
+HighLimit=0x3
+
+[1282sub1]
+ParameterName=COB-ID Client->Server(tx)
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1282sub2]
+ParameterName=COB-ID Server->Client(rx)
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1282sub3]
+ParameterName=NodeID of the SDO Server
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x1
+PDOMapping=0
+LowLimit=0x1
+HighLimit=0x7F
+
+[1283]
+ParameterName=Client SDO parameter 04
+ObjectType=0x9
+SubNumber=4
+
+[1283sub0]
+ParameterName=number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x3
+PDOMapping=0
+LowLimit=0x3
+HighLimit=0x3
+
+[1283sub1]
+ParameterName=COB-ID Client->Server(tx)
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1283sub2]
+ParameterName=COB-ID Server->Client(rx)
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1283sub3]
+ParameterName=NodeID of the SDO Server
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x1
+PDOMapping=0
+LowLimit=0x1
+HighLimit=0x7F
+
+[1284]
+ParameterName=Client SDO parameter 05
+ObjectType=0x9
+SubNumber=4
+
+[1284sub0]
+ParameterName=number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x3
+PDOMapping=0
+LowLimit=0x3
+HighLimit=0x3
+
+[1284sub1]
+ParameterName=COB-ID Client->Server(tx)
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1284sub2]
+ParameterName=COB-ID Server->Client(rx)
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1284sub3]
+ParameterName=NodeID of the SDO Server
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x1
+PDOMapping=0
+LowLimit=0x1
+HighLimit=0x7F
+
+[1285]
+ParameterName=Client SDO parameter 06
+ObjectType=0x9
+SubNumber=4
+
+[1285sub0]
+ParameterName=number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x3
+PDOMapping=0
+LowLimit=0x3
+HighLimit=0x3
+
+[1285sub1]
+ParameterName=COB-ID Client->Server(tx)
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1285sub2]
+ParameterName=COB-ID Server->Client(rx)
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1285sub3]
+ParameterName=NodeID of the SDO Server
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x1
+PDOMapping=0
+LowLimit=0x1
+HighLimit=0x7F
+
+[1286]
+ParameterName=Client SDO parameter 07
+ObjectType=0x9
+SubNumber=4
+
+[1286sub0]
+ParameterName=number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x3
+PDOMapping=0
+LowLimit=0x3
+HighLimit=0x3
+
+[1286sub1]
+ParameterName=COB-ID Client->Server(tx)
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1286sub2]
+ParameterName=COB-ID Server->Client(rx)
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1286sub3]
+ParameterName=NodeID of the SDO Server
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x1
+PDOMapping=0
+LowLimit=0x1
+HighLimit=0x7F
+
+[1287]
+ParameterName=Client SDO parameter 08
+ObjectType=0x9
+SubNumber=4
+
+[1287sub0]
+ParameterName=number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x3
+PDOMapping=0
+LowLimit=0x3
+HighLimit=0x3
+
+[1287sub1]
+ParameterName=COB-ID Client->Server(tx)
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1287sub2]
+ParameterName=COB-ID Server->Client(rx)
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1287sub3]
+ParameterName=NodeID of the SDO Server
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x1
+PDOMapping=0
+LowLimit=0x1
+HighLimit=0x7F
+
+[1288]
+ParameterName=Client SDO parameter 09
+ObjectType=0x9
+SubNumber=4
+
+[1288sub0]
+ParameterName=number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x3
+PDOMapping=0
+LowLimit=0x3
+HighLimit=0x3
+
+[1288sub1]
+ParameterName=COB-ID Client->Server(tx)
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1288sub2]
+ParameterName=COB-ID Server->Client(rx)
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1288sub3]
+ParameterName=NodeID of the SDO Server
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x1
+PDOMapping=0
+LowLimit=0x1
+HighLimit=0x7F
+
+[1400]
+ParameterName=receive PDO parameter 01
+ObjectType=0x9
+SubNumber=3
+
+[1400sub0]
+ParameterName=largest subindex supported
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x2
+PDOMapping=0
+
+[1400sub1]
+ParameterName=COB-Id used
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=$NODEID+0x80000200
+PDOMapping=0
+
+[1400sub2]
+ParameterName=transmission type
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0xFF
+PDOMapping=0
+
+[1401]
+ParameterName=receive PDO parameter 02
+ObjectType=0x9
+SubNumber=3
+
+[1401sub0]
+ParameterName=largest subindex supported
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x2
+PDOMapping=0
+
+[1401sub1]
+ParameterName=COB-Id used
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=$NODEID+0x80000300
+PDOMapping=0
+
+[1401sub2]
+ParameterName=transmission type
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0xFF
+PDOMapping=0
+
+[1402]
+ParameterName=receive PDO parameter 03
+ObjectType=0x9
+SubNumber=3
+
+[1402sub0]
+ParameterName=largest subindex supported
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x2
+PDOMapping=0
+
+[1402sub1]
+ParameterName=COB-Id used
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=$NODEID+0x80000400
+PDOMapping=0
+
+[1402sub2]
+ParameterName=transmission type
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0xFF
+PDOMapping=0
+
+[1600]
+ParameterName=receive PDO mapping 01
+ObjectType=0x9
+SubNumber=9
+
+[1600sub0]
+ParameterName=number of mapped objects
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1600sub1]
+ParameterName=PDO mapping 1. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1600sub2]
+ParameterName=PDO mapping 2. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1600sub3]
+ParameterName=PDO mapping 3. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1600sub4]
+ParameterName=PDO mapping 4. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1600sub5]
+ParameterName=PDO mapping 5. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1600sub6]
+ParameterName=PDO mapping 6. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1600sub7]
+ParameterName=PDO mapping 7. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1600sub8]
+ParameterName=PDO mapping 8. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1601]
+ParameterName=receive PDO mapping 02
+ObjectType=0x9
+SubNumber=9
+
+[1601sub0]
+ParameterName=number of mapped objects
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1601sub1]
+ParameterName=PDO mapping 1. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1601sub2]
+ParameterName=PDO mapping 2. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1601sub3]
+ParameterName=PDO mapping 3. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1601sub4]
+ParameterName=PDO mapping 4. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1601sub5]
+ParameterName=PDO mapping 5. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1601sub6]
+ParameterName=PDO mapping 6. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1601sub7]
+ParameterName=PDO mapping 7. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1601sub8]
+ParameterName=PDO mapping 8. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1602]
+ParameterName=receive PDO mapping 03
+ObjectType=0x9
+SubNumber=9
+
+[1602sub0]
+ParameterName=number of mapped objects
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1602sub1]
+ParameterName=PDO mapping 1. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1602sub2]
+ParameterName=PDO mapping 2. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1602sub3]
+ParameterName=PDO mapping 3. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1602sub4]
+ParameterName=PDO mapping 4. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1602sub5]
+ParameterName=PDO mapping 5. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1602sub6]
+ParameterName=PDO mapping 6. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1602sub7]
+ParameterName=PDO mapping 7. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1602sub8]
+ParameterName=PDO mapping 8. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1800]
+ParameterName=transmit PDO parameter 01
+ObjectType=0x9
+SubNumber=5
+
+[1800sub0]
+ParameterName=largest subindex supported
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x5
+PDOMapping=0
+
+[1800sub1]
+ParameterName=COB-ID used
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=$NODEID+0x80000180
+PDOMapping=0
+
+[1800sub2]
+ParameterName=transmission type
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0xFF
+PDOMapping=0
+
+[1800sub3]
+ParameterName=inhibit time
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1800sub5]
+ParameterName=event timer
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1801]
+ParameterName=transmit PDO parameter 02
+ObjectType=0x9
+SubNumber=5
+
+[1801sub0]
+ParameterName=largest subindex supported
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x5
+PDOMapping=0
+
+[1801sub1]
+ParameterName=COB-ID used
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=$NODEID+0x80000280
+PDOMapping=0
+
+[1801sub2]
+ParameterName=transmission type
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0xFE
+PDOMapping=0
+
+[1801sub3]
+ParameterName=inhibit time
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1801sub5]
+ParameterName=event timer
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1802]
+ParameterName=transmit PDO parameter 03
+ObjectType=0x9
+SubNumber=5
+
+[1802sub0]
+ParameterName=largest subindex supported
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x5
+PDOMapping=0
+
+[1802sub1]
+ParameterName=COB-ID used
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=$NODEID+0x80000380
+PDOMapping=0
+
+[1802sub2]
+ParameterName=transmission type
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0xFE
+PDOMapping=0
+
+[1802sub3]
+ParameterName=inhibit time
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1802sub5]
+ParameterName=event timer
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1A00]
+ParameterName=transmit PDO mapping 01
+ObjectType=0x9
+SubNumber=9
+
+[1A00sub0]
+ParameterName=number of mapped objects
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1A00sub1]
+ParameterName=PDO mapping 1. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1A00sub2]
+ParameterName=PDO mapping 2. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1A00sub3]
+ParameterName=PDO mapping 3. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1A00sub4]
+ParameterName=PDO mapping 4. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1A00sub5]
+ParameterName=PDO mapping 5. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1A00sub6]
+ParameterName=PDO mapping 6. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1A00sub7]
+ParameterName=PDO mapping 7. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1A00sub8]
+ParameterName=PDO mapping 8. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1A01]
+ParameterName=transmit PDO mapping 02
+ObjectType=0x9
+SubNumber=9
+
+[1A01sub0]
+ParameterName=number of mapped objects
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1A01sub1]
+ParameterName=PDO mapping 1. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1A01sub2]
+ParameterName=PDO mapping 2. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1A01sub3]
+ParameterName=PDO mapping 3. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1A01sub4]
+ParameterName=PDO mapping 4. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1A01sub5]
+ParameterName=PDO mapping 5. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1A01sub6]
+ParameterName=PDO mapping 6. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1A01sub7]
+ParameterName=PDO mapping 7. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1A01sub8]
+ParameterName=PDO mapping 8. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1A02]
+ParameterName=transmit PDO mapping 03
+ObjectType=0x9
+SubNumber=9
+
+[1A02sub0]
+ParameterName=number of mapped objects
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1A02sub1]
+ParameterName=PDO mapping 1. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1A02sub2]
+ParameterName=PDO mapping 2. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1A02sub3]
+ParameterName=PDO mapping 3. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1A02sub4]
+ParameterName=PDO mapping 4. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1A02sub5]
+ParameterName=PDO mapping 5. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1A02sub6]
+ParameterName=PDO mapping 6. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1A02sub7]
+ParameterName=PDO mapping 7. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1A02sub8]
+ParameterName=PDO mapping 8. app. object
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1F22]
+ParameterName=Concise DCF
+ObjectType=0x8
+SubNumber=128
+
+[1F22sub0]
+ParameterName=Number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=127
+PDOMapping=0
+
+[1F22sub1]
+ParameterName=Node-ID 1
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub2]
+ParameterName=Node-ID 2
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub3]
+ParameterName=Node-ID 3
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub4]
+ParameterName=Node-ID 4
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub5]
+ParameterName=Node-ID 5
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub6]
+ParameterName=Node-ID 6
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub7]
+ParameterName=Node-ID 7
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub8]
+ParameterName=Node-ID 8
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub9]
+ParameterName=Node-ID 9
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22subA]
+ParameterName=Node-ID 10
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22subB]
+ParameterName=Node-ID 11
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22subC]
+ParameterName=Node-ID 12
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22subD]
+ParameterName=Node-ID 13
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22subE]
+ParameterName=Node-ID 14
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22subF]
+ParameterName=Node-ID 15
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub10]
+ParameterName=Node-ID 16
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub11]
+ParameterName=Node-ID 17
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub12]
+ParameterName=Node-ID 18
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub13]
+ParameterName=Node-ID 19
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub14]
+ParameterName=Node-ID 20
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub15]
+ParameterName=Node-ID 21
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub16]
+ParameterName=Node-ID 22
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub17]
+ParameterName=Node-ID 23
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub18]
+ParameterName=Node-ID 24
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub19]
+ParameterName=Node-ID 25
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub1a]
+ParameterName=Node-ID 26
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub1b]
+ParameterName=Node-ID 27
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub1c]
+ParameterName=Node-ID 28
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub1d]
+ParameterName=Node-ID 29
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub1e]
+ParameterName=Node-ID 30
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub1f]
+ParameterName=Node-ID 31
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub20]
+ParameterName=Node-ID 32
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub21]
+ParameterName=Node-ID 33
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub22]
+ParameterName=Node-ID 34
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub23]
+ParameterName=Node-ID 35
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub24]
+ParameterName=Node-ID 36
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub25]
+ParameterName=Node-ID 37
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub26]
+ParameterName=Node-ID 38
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub27]
+ParameterName=Node-ID 39
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub28]
+ParameterName=Node-ID 40
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub29]
+ParameterName=Node-ID 41
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub2a]
+ParameterName=Node-ID 42
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub2b]
+ParameterName=Node-ID 43
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub2c]
+ParameterName=Node-ID 44
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub2d]
+ParameterName=Node-ID 45
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub2e]
+ParameterName=Node-ID 46
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub2f]
+ParameterName=Node-ID 47
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub30]
+ParameterName=Node-ID 48
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub31]
+ParameterName=Node-ID 49
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub32]
+ParameterName=Node-ID 50
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub33]
+ParameterName=Node-ID 51
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub34]
+ParameterName=Node-ID 52
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub35]
+ParameterName=Node-ID 53
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub36]
+ParameterName=Node-ID 54
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub37]
+ParameterName=Node-ID 55
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub38]
+ParameterName=Node-ID 56
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub39]
+ParameterName=Node-ID 57
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub3a]
+ParameterName=Node-ID 58
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub3b]
+ParameterName=Node-ID 59
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub3c]
+ParameterName=Node-ID 60
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub3d]
+ParameterName=Node-ID 61
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub3e]
+ParameterName=Node-ID 62
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub3f]
+ParameterName=Node-ID 63
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub40]
+ParameterName=Node-ID 64
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub41]
+ParameterName=Node-ID 65
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub42]
+ParameterName=Node-ID 66
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub43]
+ParameterName=Node-ID 67
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub44]
+ParameterName=Node-ID 68
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub45]
+ParameterName=Node-ID 69
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub46]
+ParameterName=Node-ID 70
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub47]
+ParameterName=Node-ID 71
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub48]
+ParameterName=Node-ID 72
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub49]
+ParameterName=Node-ID 73
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub4a]
+ParameterName=Node-ID 74
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub4b]
+ParameterName=Node-ID 75
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub4c]
+ParameterName=Node-ID 76
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub4d]
+ParameterName=Node-ID 77
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub4e]
+ParameterName=Node-ID 78
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub4f]
+ParameterName=Node-ID 79
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub50]
+ParameterName=Node-ID 80
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub51]
+ParameterName=Node-ID 81
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub52]
+ParameterName=Node-ID 82
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub53]
+ParameterName=Node-ID 83
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub54]
+ParameterName=Node-ID 84
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub55]
+ParameterName=Node-ID 85
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub56]
+ParameterName=Node-ID 86
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub57]
+ParameterName=Node-ID 87
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub58]
+ParameterName=Node-ID 88
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub59]
+ParameterName=Node-ID 89
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub5a]
+ParameterName=Node-ID 90
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub5b]
+ParameterName=Node-ID 91
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub5c]
+ParameterName=Node-ID 92
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub5d]
+ParameterName=Node-ID 93
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub5e]
+ParameterName=Node-ID 94
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub5f]
+ParameterName=Node-ID 95
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub60]
+ParameterName=Node-ID 96
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub61]
+ParameterName=Node-ID 97
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub62]
+ParameterName=Node-ID 98
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub63]
+ParameterName=Node-ID 99
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub64]
+ParameterName=Node-ID 100
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub65]
+ParameterName=Node-ID 101
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub66]
+ParameterName=Node-ID 102
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub67]
+ParameterName=Node-ID 103
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub68]
+ParameterName=Node-ID 104
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub69]
+ParameterName=Node-ID 105
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub6a]
+ParameterName=Node-ID 106
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub6b]
+ParameterName=Node-ID 107
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub6c]
+ParameterName=Node-ID 108
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub6d]
+ParameterName=Node-ID 109
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub6e]
+ParameterName=Node-ID 110
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub6f]
+ParameterName=Node-ID 111
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub70]
+ParameterName=Node-ID 112
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub71]
+ParameterName=Node-ID 113
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub72]
+ParameterName=Node-ID 114
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub73]
+ParameterName=Node-ID 115
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub74]
+ParameterName=Node-ID 116
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub75]
+ParameterName=Node-ID 117
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub76]
+ParameterName=Node-ID 118
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub77]
+ParameterName=Node-ID 119
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub78]
+ParameterName=Node-ID 120
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub79]
+ParameterName=Node-ID 121
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub7a]
+ParameterName=Node-ID 122
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub7b]
+ParameterName=Node-ID 123
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub7c]
+ParameterName=Node-ID 124
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub7d]
+ParameterName=Node-ID 125
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub7e]
+ParameterName=Node-ID 126
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F22sub7f]
+ParameterName=Node-ID 127
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+PDOMapping=0
+
+[1F25]
+ParameterName=Configuration request
+ObjectType=0x8
+SubNumber=129
+
+[1F25sub0]
+ParameterName=Number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=128
+PDOMapping=0
+
+[1F25sub1]
+ParameterName=Node-ID 1
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub2]
+ParameterName=Node-ID 2
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub3]
+ParameterName=Node-ID 3
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub4]
+ParameterName=Node-ID 4
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub5]
+ParameterName=Node-ID 5
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub6]
+ParameterName=Node-ID 6
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub7]
+ParameterName=Node-ID 7
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub8]
+ParameterName=Node-ID 8
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub9]
+ParameterName=Node-ID 9
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25subA]
+ParameterName=Node-ID 10
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25subB]
+ParameterName=Node-ID 11
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25subC]
+ParameterName=Node-ID 12
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25subD]
+ParameterName=Node-ID 13
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25subE]
+ParameterName=Node-ID 14
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25subF]
+ParameterName=Node-ID 15
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub10]
+ParameterName=Node-ID 16
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub11]
+ParameterName=Node-ID 17
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub12]
+ParameterName=Node-ID 18
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub13]
+ParameterName=Node-ID 19
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub14]
+ParameterName=Node-ID 20
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub15]
+ParameterName=Node-ID 21
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub16]
+ParameterName=Node-ID 22
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub17]
+ParameterName=Node-ID 23
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub18]
+ParameterName=Node-ID 24
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub19]
+ParameterName=Node-ID 25
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub1a]
+ParameterName=Node-ID 26
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub1b]
+ParameterName=Node-ID 27
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub1c]
+ParameterName=Node-ID 28
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub1d]
+ParameterName=Node-ID 29
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub1e]
+ParameterName=Node-ID 30
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub1f]
+ParameterName=Node-ID 31
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub20]
+ParameterName=Node-ID 32
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub21]
+ParameterName=Node-ID 33
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub22]
+ParameterName=Node-ID 34
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub23]
+ParameterName=Node-ID 35
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub24]
+ParameterName=Node-ID 36
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub25]
+ParameterName=Node-ID 37
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub26]
+ParameterName=Node-ID 38
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub27]
+ParameterName=Node-ID 39
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub28]
+ParameterName=Node-ID 40
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub29]
+ParameterName=Node-ID 41
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub2a]
+ParameterName=Node-ID 42
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub2b]
+ParameterName=Node-ID 43
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub2c]
+ParameterName=Node-ID 44
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub2d]
+ParameterName=Node-ID 45
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub2e]
+ParameterName=Node-ID 46
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub2f]
+ParameterName=Node-ID 47
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub30]
+ParameterName=Node-ID 48
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub31]
+ParameterName=Node-ID 49
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub32]
+ParameterName=Node-ID 50
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub33]
+ParameterName=Node-ID 51
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub34]
+ParameterName=Node-ID 52
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub35]
+ParameterName=Node-ID 53
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub36]
+ParameterName=Node-ID 54
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub37]
+ParameterName=Node-ID 55
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub38]
+ParameterName=Node-ID 56
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub39]
+ParameterName=Node-ID 57
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub3a]
+ParameterName=Node-ID 58
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub3b]
+ParameterName=Node-ID 59
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub3c]
+ParameterName=Node-ID 60
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub3d]
+ParameterName=Node-ID 61
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub3e]
+ParameterName=Node-ID 62
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub3f]
+ParameterName=Node-ID 63
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub40]
+ParameterName=Node-ID 64
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub41]
+ParameterName=Node-ID 65
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub42]
+ParameterName=Node-ID 66
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub43]
+ParameterName=Node-ID 67
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub44]
+ParameterName=Node-ID 68
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub45]
+ParameterName=Node-ID 69
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub46]
+ParameterName=Node-ID 70
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub47]
+ParameterName=Node-ID 71
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub48]
+ParameterName=Node-ID 72
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub49]
+ParameterName=Node-ID 73
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub4a]
+ParameterName=Node-ID 74
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub4b]
+ParameterName=Node-ID 75
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub4c]
+ParameterName=Node-ID 76
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub4d]
+ParameterName=Node-ID 77
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub4e]
+ParameterName=Node-ID 78
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub4f]
+ParameterName=Node-ID 79
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub50]
+ParameterName=Node-ID 80
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub51]
+ParameterName=Node-ID 81
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub52]
+ParameterName=Node-ID 82
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub53]
+ParameterName=Node-ID 83
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub54]
+ParameterName=Node-ID 84
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub55]
+ParameterName=Node-ID 85
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub56]
+ParameterName=Node-ID 86
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub57]
+ParameterName=Node-ID 87
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub58]
+ParameterName=Node-ID 88
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub59]
+ParameterName=Node-ID 89
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub5a]
+ParameterName=Node-ID 90
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub5b]
+ParameterName=Node-ID 91
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub5c]
+ParameterName=Node-ID 92
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub5d]
+ParameterName=Node-ID 93
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub5e]
+ParameterName=Node-ID 94
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub5f]
+ParameterName=Node-ID 95
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub60]
+ParameterName=Node-ID 96
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub61]
+ParameterName=Node-ID 97
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub62]
+ParameterName=Node-ID 98
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub63]
+ParameterName=Node-ID 99
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub64]
+ParameterName=Node-ID 100
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub65]
+ParameterName=Node-ID 101
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub66]
+ParameterName=Node-ID 102
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub67]
+ParameterName=Node-ID 103
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub68]
+ParameterName=Node-ID 104
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub69]
+ParameterName=Node-ID 105
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub6a]
+ParameterName=Node-ID 106
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub6b]
+ParameterName=Node-ID 107
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub6c]
+ParameterName=Node-ID 108
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub6d]
+ParameterName=Node-ID 109
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub6e]
+ParameterName=Node-ID 110
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub6f]
+ParameterName=Node-ID 111
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub70]
+ParameterName=Node-ID 112
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub71]
+ParameterName=Node-ID 113
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub72]
+ParameterName=Node-ID 114
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub73]
+ParameterName=Node-ID 115
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub74]
+ParameterName=Node-ID 116
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub75]
+ParameterName=Node-ID 117
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub76]
+ParameterName=Node-ID 118
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub77]
+ParameterName=Node-ID 119
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub78]
+ParameterName=Node-ID 120
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub79]
+ParameterName=Node-ID 121
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub7a]
+ParameterName=Node-ID 122
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub7b]
+ParameterName=Node-ID 123
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub7c]
+ParameterName=Node-ID 124
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub7d]
+ParameterName=Node-ID 125
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub7e]
+ParameterName=Node-ID 126
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub7f]
+ParameterName=Node-ID 127
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F25sub80]
+ParameterName=All nodes
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[1F80]
+ParameterName=NMT startup
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81]
+ParameterName=NMT slave assignment
+ObjectType=0x8
+SubNumber=128
+
+[1F81sub0]
+ParameterName=Number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=127
+PDOMapping=0
+
+[1F81sub1]
+ParameterName=Node-ID 1
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub2]
+ParameterName=Node-ID 2
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub3]
+ParameterName=Node-ID 3
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub4]
+ParameterName=Node-ID 4
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub5]
+ParameterName=Node-ID 5
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub6]
+ParameterName=Node-ID 6
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub7]
+ParameterName=Node-ID 7
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub8]
+ParameterName=Node-ID 8
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub9]
+ParameterName=Node-ID 9
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81subA]
+ParameterName=Node-ID 10
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81subB]
+ParameterName=Node-ID 11
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81subC]
+ParameterName=Node-ID 12
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81subD]
+ParameterName=Node-ID 13
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81subE]
+ParameterName=Node-ID 14
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81subF]
+ParameterName=Node-ID 15
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub10]
+ParameterName=Node-ID 16
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub11]
+ParameterName=Node-ID 17
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub12]
+ParameterName=Node-ID 18
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub13]
+ParameterName=Node-ID 19
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub14]
+ParameterName=Node-ID 20
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub15]
+ParameterName=Node-ID 21
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub16]
+ParameterName=Node-ID 22
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub17]
+ParameterName=Node-ID 23
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub18]
+ParameterName=Node-ID 24
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub19]
+ParameterName=Node-ID 25
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub1a]
+ParameterName=Node-ID 26
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub1b]
+ParameterName=Node-ID 27
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub1c]
+ParameterName=Node-ID 28
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub1d]
+ParameterName=Node-ID 29
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub1e]
+ParameterName=Node-ID 30
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub1f]
+ParameterName=Node-ID 31
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub20]
+ParameterName=Node-ID 32
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub21]
+ParameterName=Node-ID 33
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub22]
+ParameterName=Node-ID 34
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub23]
+ParameterName=Node-ID 35
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub24]
+ParameterName=Node-ID 36
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub25]
+ParameterName=Node-ID 37
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub26]
+ParameterName=Node-ID 38
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub27]
+ParameterName=Node-ID 39
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub28]
+ParameterName=Node-ID 40
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub29]
+ParameterName=Node-ID 41
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub2a]
+ParameterName=Node-ID 42
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub2b]
+ParameterName=Node-ID 43
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub2c]
+ParameterName=Node-ID 44
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub2d]
+ParameterName=Node-ID 45
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub2e]
+ParameterName=Node-ID 46
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub2f]
+ParameterName=Node-ID 47
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub30]
+ParameterName=Node-ID 48
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub31]
+ParameterName=Node-ID 49
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub32]
+ParameterName=Node-ID 50
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub33]
+ParameterName=Node-ID 51
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub34]
+ParameterName=Node-ID 52
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub35]
+ParameterName=Node-ID 53
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub36]
+ParameterName=Node-ID 54
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub37]
+ParameterName=Node-ID 55
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub38]
+ParameterName=Node-ID 56
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub39]
+ParameterName=Node-ID 57
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub3a]
+ParameterName=Node-ID 58
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub3b]
+ParameterName=Node-ID 59
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub3c]
+ParameterName=Node-ID 60
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub3d]
+ParameterName=Node-ID 61
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub3e]
+ParameterName=Node-ID 62
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub3f]
+ParameterName=Node-ID 63
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub40]
+ParameterName=Node-ID 64
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub41]
+ParameterName=Node-ID 65
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub42]
+ParameterName=Node-ID 66
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub43]
+ParameterName=Node-ID 67
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub44]
+ParameterName=Node-ID 68
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub45]
+ParameterName=Node-ID 69
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub46]
+ParameterName=Node-ID 70
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub47]
+ParameterName=Node-ID 71
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub48]
+ParameterName=Node-ID 72
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub49]
+ParameterName=Node-ID 73
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub4a]
+ParameterName=Node-ID 74
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub4b]
+ParameterName=Node-ID 75
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub4c]
+ParameterName=Node-ID 76
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub4d]
+ParameterName=Node-ID 77
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub4e]
+ParameterName=Node-ID 78
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub4f]
+ParameterName=Node-ID 79
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub50]
+ParameterName=Node-ID 80
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub51]
+ParameterName=Node-ID 81
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub52]
+ParameterName=Node-ID 82
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub53]
+ParameterName=Node-ID 83
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub54]
+ParameterName=Node-ID 84
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub55]
+ParameterName=Node-ID 85
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub56]
+ParameterName=Node-ID 86
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub57]
+ParameterName=Node-ID 87
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub58]
+ParameterName=Node-ID 88
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub59]
+ParameterName=Node-ID 89
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub5a]
+ParameterName=Node-ID 90
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub5b]
+ParameterName=Node-ID 91
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub5c]
+ParameterName=Node-ID 92
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub5d]
+ParameterName=Node-ID 93
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub5e]
+ParameterName=Node-ID 94
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub5f]
+ParameterName=Node-ID 95
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub60]
+ParameterName=Node-ID 96
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub61]
+ParameterName=Node-ID 97
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub62]
+ParameterName=Node-ID 98
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub63]
+ParameterName=Node-ID 99
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub64]
+ParameterName=Node-ID 100
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub65]
+ParameterName=Node-ID 101
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub66]
+ParameterName=Node-ID 102
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub67]
+ParameterName=Node-ID 103
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub68]
+ParameterName=Node-ID 104
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub69]
+ParameterName=Node-ID 105
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub6a]
+ParameterName=Node-ID 106
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub6b]
+ParameterName=Node-ID 107
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub6c]
+ParameterName=Node-ID 108
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub6d]
+ParameterName=Node-ID 109
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub6e]
+ParameterName=Node-ID 110
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub6f]
+ParameterName=Node-ID 111
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub70]
+ParameterName=Node-ID 112
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub71]
+ParameterName=Node-ID 113
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub72]
+ParameterName=Node-ID 114
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub73]
+ParameterName=Node-ID 115
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub74]
+ParameterName=Node-ID 116
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub75]
+ParameterName=Node-ID 117
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub76]
+ParameterName=Node-ID 118
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub77]
+ParameterName=Node-ID 119
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub78]
+ParameterName=Node-ID 120
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub79]
+ParameterName=Node-ID 121
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub7a]
+ParameterName=Node-ID 122
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub7b]
+ParameterName=Node-ID 123
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub7c]
+ParameterName=Node-ID 124
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub7d]
+ParameterName=Node-ID 125
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub7e]
+ParameterName=Node-ID 126
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F81sub7f]
+ParameterName=Node-ID 127
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1F82]
+ParameterName=Request NMT
+ObjectType=0x8
+SubNumber=129
+
+[1F82sub0]
+ParameterName=Number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=128
+PDOMapping=0
+
+[1F82sub1]
+ParameterName=Node-ID 1
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub2]
+ParameterName=Node-ID 2
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub3]
+ParameterName=Node-ID 3
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub4]
+ParameterName=Node-ID 4
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub5]
+ParameterName=Node-ID 5
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub6]
+ParameterName=Node-ID 6
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub7]
+ParameterName=Node-ID 7
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub8]
+ParameterName=Node-ID 8
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub9]
+ParameterName=Node-ID 9
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82subA]
+ParameterName=Node-ID 10
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82subB]
+ParameterName=Node-ID 11
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82subC]
+ParameterName=Node-ID 12
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82subD]
+ParameterName=Node-ID 13
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82subE]
+ParameterName=Node-ID 14
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82subF]
+ParameterName=Node-ID 15
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub10]
+ParameterName=Node-ID 16
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub11]
+ParameterName=Node-ID 17
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub12]
+ParameterName=Node-ID 18
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub13]
+ParameterName=Node-ID 19
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub14]
+ParameterName=Node-ID 20
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub15]
+ParameterName=Node-ID 21
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub16]
+ParameterName=Node-ID 22
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub17]
+ParameterName=Node-ID 23
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub18]
+ParameterName=Node-ID 24
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub19]
+ParameterName=Node-ID 25
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub1a]
+ParameterName=Node-ID 26
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub1b]
+ParameterName=Node-ID 27
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub1c]
+ParameterName=Node-ID 28
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub1d]
+ParameterName=Node-ID 29
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub1e]
+ParameterName=Node-ID 30
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub1f]
+ParameterName=Node-ID 31
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub20]
+ParameterName=Node-ID 32
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub21]
+ParameterName=Node-ID 33
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub22]
+ParameterName=Node-ID 34
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub23]
+ParameterName=Node-ID 35
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub24]
+ParameterName=Node-ID 36
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub25]
+ParameterName=Node-ID 37
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub26]
+ParameterName=Node-ID 38
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub27]
+ParameterName=Node-ID 39
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub28]
+ParameterName=Node-ID 40
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub29]
+ParameterName=Node-ID 41
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub2a]
+ParameterName=Node-ID 42
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub2b]
+ParameterName=Node-ID 43
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub2c]
+ParameterName=Node-ID 44
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub2d]
+ParameterName=Node-ID 45
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub2e]
+ParameterName=Node-ID 46
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub2f]
+ParameterName=Node-ID 47
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub30]
+ParameterName=Node-ID 48
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub31]
+ParameterName=Node-ID 49
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub32]
+ParameterName=Node-ID 50
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub33]
+ParameterName=Node-ID 51
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub34]
+ParameterName=Node-ID 52
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub35]
+ParameterName=Node-ID 53
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub36]
+ParameterName=Node-ID 54
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub37]
+ParameterName=Node-ID 55
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub38]
+ParameterName=Node-ID 56
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub39]
+ParameterName=Node-ID 57
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub3a]
+ParameterName=Node-ID 58
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub3b]
+ParameterName=Node-ID 59
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub3c]
+ParameterName=Node-ID 60
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub3d]
+ParameterName=Node-ID 61
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub3e]
+ParameterName=Node-ID 62
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub3f]
+ParameterName=Node-ID 63
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub40]
+ParameterName=Node-ID 64
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub41]
+ParameterName=Node-ID 65
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub42]
+ParameterName=Node-ID 66
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub43]
+ParameterName=Node-ID 67
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub44]
+ParameterName=Node-ID 68
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub45]
+ParameterName=Node-ID 69
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub46]
+ParameterName=Node-ID 70
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub47]
+ParameterName=Node-ID 71
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub48]
+ParameterName=Node-ID 72
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub49]
+ParameterName=Node-ID 73
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub4a]
+ParameterName=Node-ID 74
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub4b]
+ParameterName=Node-ID 75
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub4c]
+ParameterName=Node-ID 76
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub4d]
+ParameterName=Node-ID 77
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub4e]
+ParameterName=Node-ID 78
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub4f]
+ParameterName=Node-ID 79
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub50]
+ParameterName=Node-ID 80
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub51]
+ParameterName=Node-ID 81
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub52]
+ParameterName=Node-ID 82
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub53]
+ParameterName=Node-ID 83
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub54]
+ParameterName=Node-ID 84
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub55]
+ParameterName=Node-ID 85
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub56]
+ParameterName=Node-ID 86
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub57]
+ParameterName=Node-ID 87
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub58]
+ParameterName=Node-ID 88
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub59]
+ParameterName=Node-ID 89
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub5a]
+ParameterName=Node-ID 90
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub5b]
+ParameterName=Node-ID 91
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub5c]
+ParameterName=Node-ID 92
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub5d]
+ParameterName=Node-ID 93
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub5e]
+ParameterName=Node-ID 94
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub5f]
+ParameterName=Node-ID 95
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub60]
+ParameterName=Node-ID 96
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub61]
+ParameterName=Node-ID 97
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub62]
+ParameterName=Node-ID 98
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub63]
+ParameterName=Node-ID 99
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub64]
+ParameterName=Node-ID 100
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub65]
+ParameterName=Node-ID 101
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub66]
+ParameterName=Node-ID 102
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub67]
+ParameterName=Node-ID 103
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub68]
+ParameterName=Node-ID 104
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub69]
+ParameterName=Node-ID 105
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub6a]
+ParameterName=Node-ID 106
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub6b]
+ParameterName=Node-ID 107
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub6c]
+ParameterName=Node-ID 108
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub6d]
+ParameterName=Node-ID 109
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub6e]
+ParameterName=Node-ID 110
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub6f]
+ParameterName=Node-ID 111
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub70]
+ParameterName=Node-ID 112
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub71]
+ParameterName=Node-ID 113
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub72]
+ParameterName=Node-ID 114
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub73]
+ParameterName=Node-ID 115
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub74]
+ParameterName=Node-ID 116
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub75]
+ParameterName=Node-ID 117
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub76]
+ParameterName=Node-ID 118
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub77]
+ParameterName=Node-ID 119
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub78]
+ParameterName=Node-ID 120
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub79]
+ParameterName=Node-ID 121
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub7a]
+ParameterName=Node-ID 122
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub7b]
+ParameterName=Node-ID 123
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub7c]
+ParameterName=Node-ID 124
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub7d]
+ParameterName=Node-ID 125
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub7e]
+ParameterName=Node-ID 126
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub7f]
+ParameterName=Node-ID 127
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F82sub80]
+ParameterName=All nodes
+ObjectType=0x7
+DataType=0x0005
+AccessType=wo
+PDOMapping=0
+
+[1F83]
+ParameterName=Request Guarding
+ObjectType=0x8
+SubNumber=129
+
+[1F83sub0]
+ParameterName=Number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=128
+PDOMapping=0
+
+[1F83sub1]
+ParameterName=Node-ID 1
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub2]
+ParameterName=Node-ID 2
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub3]
+ParameterName=Node-ID 3
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub4]
+ParameterName=Node-ID 4
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub5]
+ParameterName=Node-ID 5
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub6]
+ParameterName=Node-ID 6
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub7]
+ParameterName=Node-ID 7
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub8]
+ParameterName=Node-ID 8
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub9]
+ParameterName=Node-ID 9
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83subA]
+ParameterName=Node-ID 10
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83subB]
+ParameterName=Node-ID 11
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83subC]
+ParameterName=Node-ID 12
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83subD]
+ParameterName=Node-ID 13
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83subE]
+ParameterName=Node-ID 14
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83subF]
+ParameterName=Node-ID 15
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub10]
+ParameterName=Node-ID 16
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub11]
+ParameterName=Node-ID 17
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub12]
+ParameterName=Node-ID 18
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub13]
+ParameterName=Node-ID 19
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub14]
+ParameterName=Node-ID 20
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub15]
+ParameterName=Node-ID 21
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub16]
+ParameterName=Node-ID 22
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub17]
+ParameterName=Node-ID 23
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub18]
+ParameterName=Node-ID 24
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub19]
+ParameterName=Node-ID 25
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub1a]
+ParameterName=Node-ID 26
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub1b]
+ParameterName=Node-ID 27
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub1c]
+ParameterName=Node-ID 28
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub1d]
+ParameterName=Node-ID 29
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub1e]
+ParameterName=Node-ID 30
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub1f]
+ParameterName=Node-ID 31
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub20]
+ParameterName=Node-ID 32
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub21]
+ParameterName=Node-ID 33
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub22]
+ParameterName=Node-ID 34
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub23]
+ParameterName=Node-ID 35
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub24]
+ParameterName=Node-ID 36
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub25]
+ParameterName=Node-ID 37
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub26]
+ParameterName=Node-ID 38
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub27]
+ParameterName=Node-ID 39
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub28]
+ParameterName=Node-ID 40
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub29]
+ParameterName=Node-ID 41
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub2a]
+ParameterName=Node-ID 42
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub2b]
+ParameterName=Node-ID 43
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub2c]
+ParameterName=Node-ID 44
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub2d]
+ParameterName=Node-ID 45
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub2e]
+ParameterName=Node-ID 46
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub2f]
+ParameterName=Node-ID 47
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub30]
+ParameterName=Node-ID 48
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub31]
+ParameterName=Node-ID 49
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub32]
+ParameterName=Node-ID 50
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub33]
+ParameterName=Node-ID 51
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub34]
+ParameterName=Node-ID 52
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub35]
+ParameterName=Node-ID 53
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub36]
+ParameterName=Node-ID 54
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub37]
+ParameterName=Node-ID 55
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub38]
+ParameterName=Node-ID 56
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub39]
+ParameterName=Node-ID 57
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub3a]
+ParameterName=Node-ID 58
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub3b]
+ParameterName=Node-ID 59
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub3c]
+ParameterName=Node-ID 60
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub3d]
+ParameterName=Node-ID 61
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub3e]
+ParameterName=Node-ID 62
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub3f]
+ParameterName=Node-ID 63
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub40]
+ParameterName=Node-ID 64
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub41]
+ParameterName=Node-ID 65
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub42]
+ParameterName=Node-ID 66
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub43]
+ParameterName=Node-ID 67
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub44]
+ParameterName=Node-ID 68
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub45]
+ParameterName=Node-ID 69
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub46]
+ParameterName=Node-ID 70
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub47]
+ParameterName=Node-ID 71
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub48]
+ParameterName=Node-ID 72
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub49]
+ParameterName=Node-ID 73
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub4a]
+ParameterName=Node-ID 74
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub4b]
+ParameterName=Node-ID 75
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub4c]
+ParameterName=Node-ID 76
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub4d]
+ParameterName=Node-ID 77
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub4e]
+ParameterName=Node-ID 78
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub4f]
+ParameterName=Node-ID 79
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub50]
+ParameterName=Node-ID 80
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub51]
+ParameterName=Node-ID 81
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub52]
+ParameterName=Node-ID 82
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub53]
+ParameterName=Node-ID 83
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub54]
+ParameterName=Node-ID 84
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub55]
+ParameterName=Node-ID 85
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub56]
+ParameterName=Node-ID 86
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub57]
+ParameterName=Node-ID 87
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub58]
+ParameterName=Node-ID 88
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub59]
+ParameterName=Node-ID 89
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub5a]
+ParameterName=Node-ID 90
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub5b]
+ParameterName=Node-ID 91
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub5c]
+ParameterName=Node-ID 92
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub5d]
+ParameterName=Node-ID 93
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub5e]
+ParameterName=Node-ID 94
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub5f]
+ParameterName=Node-ID 95
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub60]
+ParameterName=Node-ID 96
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub61]
+ParameterName=Node-ID 97
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub62]
+ParameterName=Node-ID 98
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub63]
+ParameterName=Node-ID 99
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub64]
+ParameterName=Node-ID 100
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub65]
+ParameterName=Node-ID 101
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub66]
+ParameterName=Node-ID 102
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub67]
+ParameterName=Node-ID 103
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub68]
+ParameterName=Node-ID 104
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub69]
+ParameterName=Node-ID 105
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub6a]
+ParameterName=Node-ID 106
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub6b]
+ParameterName=Node-ID 107
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub6c]
+ParameterName=Node-ID 108
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub6d]
+ParameterName=Node-ID 109
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub6e]
+ParameterName=Node-ID 110
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub6f]
+ParameterName=Node-ID 111
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub70]
+ParameterName=Node-ID 112
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub71]
+ParameterName=Node-ID 113
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub72]
+ParameterName=Node-ID 114
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub73]
+ParameterName=Node-ID 115
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub74]
+ParameterName=Node-ID 116
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub75]
+ParameterName=Node-ID 117
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub76]
+ParameterName=Node-ID 118
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub77]
+ParameterName=Node-ID 119
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub78]
+ParameterName=Node-ID 120
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub79]
+ParameterName=Node-ID 121
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub7a]
+ParameterName=Node-ID 122
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub7b]
+ParameterName=Node-ID 123
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub7c]
+ParameterName=Node-ID 124
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub7d]
+ParameterName=Node-ID 125
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub7e]
+ParameterName=Node-ID 126
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub7f]
+ParameterName=Node-ID 127
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1F83sub80]
+ParameterName=All nodes
+ObjectType=0x7
+DataType=0x0005
+AccessType=wo
+PDOMapping=0
+
+[1F89]
+ParameterName=Boot time
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[9860]
+ParameterName=Channel for vertical comm.
+ObjectType=0x9
+SubNumber=8
+
+[9860sub0]
+ParameterName=number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=const
+DefaultValue=0x7
+PDOMapping=0
+
+[9860sub1]
+ParameterName=CMD Rx channel
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[9860sub2]
+ParameterName=Tx Polling channel
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x0
+PDOMapping=0
+
+[9860sub3]
+ParameterName=CMD Tx channel
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[9860sub4]
+ParameterName=DATA Rx channel
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[9860sub5]
+ParameterName=DATA Tx channel
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[9860sub6]
+ParameterName=REC Rx channel
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[9860sub7]
+ParameterName=REC Tx channel
+ObjectType=0x2
+DataType=0x000f
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[ManufacturerObjects]
+SupportedObjects=4
+1=0x3001
+2=0x3002
+3=0x3003
+4=0x3006
+
+[3001]
+ParameterName=Intervall for network scan
+ObjectType=0x9
+SubNumber=3
+
+[3001sub0]
+ParameterName=number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=const
+DefaultValue=0x2
+PDOMapping=0
+LowLimit=0x2
+HighLimit=0x2
+
+[3001sub1]
+ParameterName=Low Limit
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x1
+PDOMapping=0
+LowLimit=0x1
+HighLimit=0x7F
+
+[3001sub2]
+ParameterName=High Limit
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x7F
+PDOMapping=0
+LowLimit=0x1
+HighLimit=0x7F
+
+[3002]
+ParameterName=COB-IDs for SPS node guarding
+ObjectType=0x9
+SubNumber=4
+
+[3002sub0]
+ParameterName=number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=const
+DefaultValue=0x3
+PDOMapping=0
+
+[3002sub1]
+ParameterName=COB-ID node state
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x80000000
+PDOMapping=0
+
+[3002sub2]
+ParameterName=COB-ID master identification
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x80000000
+PDOMapping=0
+
+[3002sub3]
+ParameterName=COB-ID backup master identification
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x80000000
+PDOMapping=0
+
+[3003]
+ParameterName=Boot Delays
+ObjectType=0x9
+SubNumber=3
+
+[3003sub0]
+ParameterName=number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=const
+DefaultValue=0x2
+PDOMapping=0
+
+[3003sub1]
+ParameterName=Boot Delay Time
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=50
+PDOMapping=0
+
+[3003sub2]
+ParameterName=PLC Start Delay after Enter Operational
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=100
+PDOMapping=0
+
+[3006]
+ParameterName=CANopen manager configuration
+ObjectType=0x9
+SubNumber=12
+
+[3006sub0]
+ParameterName=number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0xB
+PDOMapping=0
+
+[3006sub1]
+ParameterName=CANopen manager features
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0x2
+PDOMapping=0
+
+[3006sub2]
+ParameterName=Lifeguard safety factor in %
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=20
+PDOMapping=0
+
+[3006sub3]
+ParameterName=Heartbeat safety factor in %
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=200
+PDOMapping=0
+
+[3006sub4]
+ParameterName=Default heartbeat producer time in ms
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=1000
+PDOMapping=0
+
+[3006sub5]
+ParameterName=Start boot slave delay in ms
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=200
+PDOMapping=0
+
+[3006sub6]
+ParameterName=Retry timeout boot in ms
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=1000
+PDOMapping=0
+
+[3006sub7]
+ParameterName=Retry timeout run in ms
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=1000
+PDOMapping=0
+
+[3006sub8]
+ParameterName=CANopen Manager bootup
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[3006sub9]
+ParameterName=Start guard timeout in ms
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=100
+PDOMapping=0
+
+[3006suba]
+ParameterName=Default lifeguard time in ms
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=1000
+PDOMapping=0
+
+[3006subb]
+ParameterName=Default retry factor
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=3
+PDOMapping=0
+
+[DynamicChannels]
+NrOfSeg=16
+Type1=0x0001
+Dir1=ro
+Range1=0xA080-0xA0BF
+PPOffset1=0,1
+MaxCnt1=32
+Type2=0x0002
+Dir2=ro
+Range2=0xA000-0xA03F
+PPOffset2=0
+MaxCnt2=128
+Type3=0x0005
+Dir3=ro
+Range3=0xA040-0xA07F
+PPOffset3=0
+MaxCnt3=256
+Type4=0x0003
+Dir4=ro
+Range4=0xA0C0-0xA0FF
+PPOffset4=0
+MaxCnt4=128
+Type5=0x0006
+Dir5=ro
+Range5=0xA100-0xA13F
+PPOffset5=0
+MaxCnt5=128
+Type6=0x0004
+Dir6=ro
+Range6=0xA1C0-0xA1FF
+PPOffset6=0
+MaxCnt6=256
+Type7=0x0007
+Dir7=ro
+Range7=0xA200-0xA23F
+PPOffset7=0
+MaxCnt7=256
+Type8=0x0008
+Dir8=ro
+Range8=0xA240-0xA27F
+PPOffset8=0
+MaxCnt8=48
+Type9=0x0001
+Dir9=rww
+Range9=0xA500-0xA53F
+PPOffset9=0,1
+MaxCnt9=32
+Type10=0x0002
+Dir10=rww
+Range10=0xA480-0xA4BF
+PPOffset10=0
+MaxCnt10=128
+Type11=0x0005
+Dir11=rww
+Range11=0xA4C0-0xA4FF
+PPOffset11=0
+MaxCnt11=128
+Type12=0x0003
+Dir12=rww
+Range12=0xA540-0xA57F
+PPOffset12=0
+MaxCnt12=128
+Type13=0x0006
+Dir13=rww
+Range13=0xA580-0xA5BF
+PPOffset13=0
+MaxCnt13=128
+Type14=0x0004
+Dir14=rww
+Range14=0xA640-0xA67F
+PPOffset14=0
+MaxCnt14=256
+Type15=0x0007
+Dir15=rww
+Range15=0xA680-0xA6BF
+PPOffset15=0
+MaxCnt15=256
+Type16=0x0008
+Dir16=rww
+Range16=0xA6C0-0xA6FF
+PPOffset16=0
+MaxCnt16=48
+;INPUTS
+;---- Boolean --------
+;---- Integer8 --------
+;---- Usigned8 --------
+;---- Integer16 -------
+;---- Usigned16 --------
+;---- Integer32 -------
+;---- Usigned32 --------
+;---- Float --------
+;OUTPUTS
+;---- Boolean --------
+;---- Integer8 --------
+;---- Usigned8 --------
+;---- Integer16 -------
+;---- Usigned16 --------
+;---- Integer32 -------
+;---- Usigned32 --------
+;---- Float --------
