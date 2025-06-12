@@ -1,0 +1,188 @@
+
+--- ETA4 Abfrage am 2025-06-11 23:48:40 ---
+act. elect. temp (0x6042:1): 393 (raw) = 39.300 °C
+
+
+--- ETA4 Abfrage am 2025-06-11 23:51:46 ---
+act. elect. temp (0x6042:1): 393 (raw) = 39.300 °C
+
+
+--- ETA4 Abfrage am 2025-06-12 00:15:37 ---
+act. elect. temp (0x6042:1): 403 (raw) = 40.300 °C
+
+
+--- ETA4 Abfrage am 2025-06-12 00:17:02 ---
+act. elect. temp (0x6042:1): 406 (raw) = 40.600 °C
+
+
+--- ETA4 Abfrage am 2025-06-12 00:18:02 ---
+act. elect. temp (0x6042:1): 408 (raw) = 40.800 °C
+
+
+--- ETA4 Abfrage am 2025-06-12 00:30:02 ---
+act. elect. temp (0x6042:1): 407 (raw) = 40.700 °C
+
+
+--- ETA4 Abfrage am 2025-06-12 01:00:02 ---
+act. elect. temp (0x6042:1): 399 (raw) = 39.900 °C
+
+
+--- ETA4 Abfrage am 2025-06-12 01:30:02 ---
+act. elect. temp (0x6042:1): 396 (raw) = 39.600 °C
+
+
+--- ETA4 Abfrage am 2025-06-12 02:00:02 ---
+act. elect. temp (0x6042:1): 395 (raw) = 39.500 °C
+
+
+--- ETA4 Abfrage am 2025-06-12 02:30:02 ---
+act. elect. temp (0x6042:1): 394 (raw) = 39.400 °C
+
+
+--- ETA4 Abfrage am 2025-06-12 03:00:02 ---
+act. elect. temp (0x6042:1): 394 (raw) = 39.400 °C
+
+
+--- ETA4 Abfrage am 2025-06-12 03:30:02 ---
+act. elect. temp (0x6042:1): 393 (raw) = 39.300 °C
+
+
+--- ETA4 Abfrage am 2025-06-12 04:00:02 ---
+act. elect. temp (0x6042:1): 393 (raw) = 39.300 °C
+
+
+--- ETA4 Abfrage am 2025-06-12 04:30:02 ---
+act. elect. temp (0x6042:1): 392 (raw) = 39.200 °C
+
+
+--- ETA4 Abfrage am 2025-06-12 05:00:02 ---
+act. elect. temp (0x6042:1): 392 (raw) = 39.200 °C
+
+
+--- ETA4 Abfrage am 2025-06-12 05:30:02 ---
+act. elect. temp (0x6042:1): 392 (raw) = 39.200 °C
+
+
+--- ETA4 Abfrage am 2025-06-12 06:00:02 ---
+act. elect. temp (0x6042:1): 391 (raw) = 39.100 °C
+
+
+--- ETA4 Abfrage am 2025-06-12 06:30:02 ---
+act. elect. temp (0x6042:1): 391 (raw) = 39.100 °C
+
+
+--- ETA4 Abfrage am 2025-06-12 07:00:01 ---
+act. elect. temp (0x6042:1): 391 (raw) = 39.100 °C
+
+
+--- ETA4 Abfrage am 2025-06-12 07:30:02 ---
+act. elect. temp (0x6042:1): 392 (raw) = 39.200 °C
+
+
+--- ETA4 Abfrage am 2025-06-12 08:00:02 ---
+act. elect. temp (0x6042:1): 392 (raw) = 39.200 °C
+
+
+--- ETA4 Abfrage am 2025-06-12 08:30:02 ---
+act. elect. temp (0x6042:1): 393 (raw) = 39.300 °C
+
+
+--- ETA4 Abfrage am 2025-06-12 09:00:02 ---
+act. elect. temp (0x6042:1): 394 (raw) = 39.400 °C
+
+
+--- ETA4 Abfrage am 2025-06-12 09:30:02 ---
+act. elect. temp (0x6042:1): 395 (raw) = 39.500 °C
+
+
+--- ETA4 Abfrage am 2025-06-12 10:00:02 ---
+act. elect. temp (0x6042:1): 395 (raw) = 39.500 °C
+
+
+--- ETA4 Abfrage am 2025-06-12 10:30:02 ---
+act. elect. temp (0x6042:1): 396 (raw) = 39.600 °C
+
+
+--- ETA4 Abfrage am 2025-06-12 11:00:02 ---
+act. elect. temp (0x6042:1): 397 (raw) = 39.700 °C
+
+
+--- ETA4 Abfrage am 2025-06-12 11:30:02 ---
+act. elect. temp (0x6042:1): 397 (raw) = 39.700 °C
+
+
+--- ETA4 Abfrage am 2025-06-12 12:00:02 ---
+act. elect. temp (0x6042:1): 397 (raw) = 39.700 °C
+
+
+--- ETA4 Abfrage am 2025-06-12 12:30:02 ---
+act. elect. temp (0x6042:1): 398 (raw) = 39.800 °C
+
+
+--- ETA4 Abfrage am 2025-06-12 13:00:02 ---
+act. elect. temp (0x6042:1): 397 (raw) = 39.700 °C
+
+
+--- ETA4 Abfrage am 2025-06-12 13:30:02 ---
+act. elect. temp (0x6042:1): 397 (raw) = 39.700 °C
+
+
+--- ETA4 Abfrage am 2025-06-12 14:00:02 ---
+act. elect. temp (0x6042:1): 397 (raw) = 39.700 °C
+
+
+--- ETA4 Abfrage am 2025-06-12 14:30:02 ---
+act. elect. temp (0x6042:1): 397 (raw) = 39.700 °C
+
+
+--- ETA4 Abfrage am 2025-06-12 15:00:01 ---
+act. elect. temp (0x6042:1): 396 (raw) = 39.600 °C
+
+
+--- ETA4 Abfrage am 2025-06-12 15:30:01 ---
+act. elect. temp (0x6042:1): 396 (raw) = 39.600 °C
+
+
+--- ETA4 Abfrage am 2025-06-12 16:00:01 ---
+act. elect. temp (0x6042:1): 396 (raw) = 39.600 °C
+
+
+--- ETA4 Abfrage am 2025-06-12 16:30:02 ---
+act. elect. temp (0x6042:1): 397 (raw) = 39.700 °C
+
+
+--- ETA4 Abfrage am 2025-06-12 17:00:02 ---
+act. elect. temp (0x6042:1): 397 (raw) = 39.700 °C
+
+
+--- ETA4 Abfrage am 2025-06-12 17:30:02 ---
+act. elect. temp (0x6042:1): 397 (raw) = 39.700 °C
+
+
+--- ETA4 Abfrage am 2025-06-12 18:00:02 ---
+act. elect. temp (0x6042:1): 397 (raw) = 39.700 °C
+
+
+--- ETA4 Abfrage am 2025-06-12 18:30:02 ---
+act. elect. temp (0x6042:1): 397 (raw) = 39.700 °C
+
+
+--- ETA4 Abfrage am 2025-06-12 19:00:02 ---
+act. elect. temp (0x6042:1): 398 (raw) = 39.800 °C
+
+
+--- ETA4 Abfrage am 2025-06-12 19:30:02 ---
+act. elect. temp (0x6042:1): 398 (raw) = 39.800 °C
+
+
+--- ETA4 Abfrage am 2025-06-12 20:00:02 ---
+act. elect. temp (0x6042:1): 398 (raw) = 39.800 °C
+
+
+--- ETA4 Abfrage am 2025-06-12 20:30:02 ---
+act. elect. temp (0x6042:1): 398 (raw) = 39.800 °C
+
+
+--- ETA4 Abfrage am 2025-06-12 21:00:02 ---
+act. elect. temp (0x6042:1): 398 (raw) = 39.800 °C
+
