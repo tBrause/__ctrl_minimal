@@ -109,6 +109,6 @@ Zur Referenz diente das bestehende Programmpaket **emsc2.0.9.12**, das erfolgrei
 - [Objektliste Lite (HTML)](https://github.com/tBrause/__ctrl_chat/blob/main/et_adapter_0.html)
 - [Objektliste Full (HTML)](https://github.com/tBrause/__ctrl_chat/blob/main/et_adapter_1.html)
 
-Auf dieser Basis wird das neue Modul **EnergyCAN** entwickelt, das die gleiche CAN-Datenstruktur verwendet, aber als eigene Implementierung (statt `emsc`) ausgelegt ist.
+Auf dieser Basis wird das neue Modul **EnergyCAN** entwickelt.
 
-Ziel: Kompatible, stabile CAN-Kommunikation mit dem Batteriesystem, unabhängig vom ursprünglichen Programmpaket.
+Ziel: Kompatible, stabile CAN-Kommunikation mit dem Batteriesystem.
