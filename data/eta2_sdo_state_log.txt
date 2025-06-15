@@ -1,0 +1,8 @@
+
+--- ETA2 State-Abfrage am 2025-06-12 22:47:02 ---
+EB State (0x6002:1): 0x80c0 = Normal Operation
+
+
+--- ETA2 State-Abfrage am 2025-06-12 22:47:13 ---
+EB State (0x6002:1): 0x80c0 = Normal Operation
+

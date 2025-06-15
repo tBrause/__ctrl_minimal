@@ -1,33 +1,37 @@
 #!/bin/bash
-
+/home/pi/__ctrl_minimal/tools/eta_sdo_read_state/eta_sdo_read_state 2
+sleep 4
 /home/pi/__ctrl_minimal/tools/eta_sdo_read_soc/eta_sdo_read_soc 2
 sleep 4
 /home/pi/__ctrl_minimal/tools/eta_sdo_read_temp/eta_sdo_read_temp 2
 sleep 4
-
+/home/pi/__ctrl_minimal/tools/eta_sdo_read_state/eta_sdo_read_state 3
+sleep 4
 /home/pi/__ctrl_minimal/tools/eta_sdo_read_soc/eta_sdo_read_soc 3
 sleep 4
 /home/pi/__ctrl_minimal/tools/eta_sdo_read_temp/eta_sdo_read_temp 3
 sleep 4
-
+/home/pi/__ctrl_minimal/tools/eta_sdo_read_state/eta_sdo_read_state 4
+sleep 4
 /home/pi/__ctrl_minimal/tools/eta_sdo_read_soc/eta_sdo_read_soc 4
 sleep 4
 /home/pi/__ctrl_minimal/tools/eta_sdo_read_temp/eta_sdo_read_temp 4
 sleep 4
-
+/home/pi/__ctrl_minimal/tools/eta_sdo_read_state/eta_sdo_read_state 5
+sleep 4
 /home/pi/__ctrl_minimal/tools/eta_sdo_read_soc/eta_sdo_read_soc 5
 sleep 4
-
 /home/pi/__ctrl_minimal/tools/eta_sdo_read_temp/eta_sdo_read_temp 5
 sleep 4
-
+/home/pi/__ctrl_minimal/tools/eta_sdo_read_state/eta_sdo_read_state 6
+sleep 4
 /home/pi/__ctrl_minimal/tools/eta_sdo_read_soc/eta_sdo_read_soc 6
 sleep 4
 /home/pi/__ctrl_minimal/tools/eta_sdo_read_temp/eta_sdo_read_temp 6
 sleep 4
-
+/home/pi/__ctrl_minimal/tools/eta_sdo_read_state/eta_sdo_read_state 7
+sleep 4
 /home/pi/__ctrl_minimal/tools/eta_sdo_read_soc/eta_sdo_read_soc 7
 sleep 4
 /home/pi/__ctrl_minimal/tools/eta_sdo_read_temp/eta_sdo_read_temp 7
-
 exit 0
