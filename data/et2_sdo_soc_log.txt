@@ -2,3 +2,43 @@
 --- ET2 SOC-Abfrage am 2025-06-12 23:25:16 ---
 SOC (0x6164:1): 3129 (raw) = 31.29 %
 
+
+--- ET2 SOC-Abfrage am 2025-06-12 23:55:16 ---
+SOC (0x6164:2): Fehler: Kein Zugriff oder Objekt nicht vorhanden.
+
+
+--- ET2 SOC-Abfrage am 2025-06-13 00:26:24 ---
+SOC (0x6164:3): Fehler: Kein Zugriff oder Objekt nicht vorhanden.
+
+
+--- ET2 SOC-Abfrage am 2025-06-13 00:26:58 ---
+SOC (0x6164:4): Fehler: Kein Zugriff oder Objekt nicht vorhanden.
+
+
+--- ET2 SOC-Abfrage am 2025-06-13 00:27:46 ---
+SOC (0x6164:5): Fehler: Kein Zugriff oder Objekt nicht vorhanden.
+
+
+--- ET2 SOC-Abfrage am 2025-06-13 00:29:47 ---
+SOC (0x6164:128): Fehler: Kein Zugriff oder Objekt nicht vorhanden.
+
+
+--- ET2 SOC-Abfrage am 2025-06-13 00:30:19 ---
+SOC (0x6164:8): Fehler: Kein Zugriff oder Objekt nicht vorhanden.
+
+
+--- ET2 SOC-Abfrage am 2025-06-13 00:30:53 ---
+SOC (0x6164:128): Fehler: Kein Zugriff oder Objekt nicht vorhanden.
+
+
+--- ET2 SOC-Abfrage am 2025-06-13 01:23:59 ---
+SOC (0x6164:128): Fehler: Kein Zugriff oder Objekt nicht vorhanden.
+
+
+--- ET2 SOC-Abfrage am 2025-06-13 01:25:47 ---
+SOC (0x6164:129): Fehler: Kein Zugriff oder Objekt nicht vorhanden.
+
+
+--- ET2 SOC-Abfrage am 2025-06-13 01:26:26 ---
+SOC (0x6164:130): Fehler: Kein Zugriff oder Objekt nicht vorhanden.
+

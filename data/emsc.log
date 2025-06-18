@@ -1,0 +1,259 @@
+./emsc2.0.9.12 V0.9.9 with debug level 65535 started
+rxbuf 212992
+1750278986.287459 EbIndikationNewEbState: line 0, subindex 1, ebstate: 4000
+1750278986.287570 EbIndikationNewEbState: line 0, subindex 2, ebstate: 4000
+Establishing handler for signal 34
+timer ID is 0x0
+fd CAN = 4
+1750278986.289520 0: EbIndikationCommStateChanged: ok
+1750278986.289607 LSS master indication service 0: errorCode 0 - Non configured Nodes, wait a little bit
+1750278986.289733 LSS master indication service 0: errorCode 0 - Non configured Nodes, wait a little bit
+1750278986.297692 Start new LSS scan-----------------
+1750278986.297748 knownNodes[0].nodeId = 0
+1750278986.297753 Start normal FastScan
+1750278988.957681 LSS master indication service 3: errorCode 0 - node detected: 0x3c9 0x9 0x3013002 0x104
+1750278988.957761 old nodeIdAssigned[] 0 0 0 0
+1750278988.957767 try get node id by identity, use 0
+1750278988.957770 new 3c9 9 3013002 104
+1750278988.957775 *** set node id to 2
+1750278988.958019 new nodeIdAssigned[] 4 0 0 0
+1750278988.959323 LSS master indication service 1: errorCode 0 - set LSS state waiting 
+1750278988.961150 LSS master indication service 0: errorCode 0 - Non configured Nodes, wait a little bit
+1750278988.961359 hbInd line 0: HB Event 0 node 2 nmtState: 127
+1750278988.961370 Node 2 Bootup empfangen - starte Config
+1750278988.961866 LSS master indication service 0: errorCode 0 - Non configured Nodes, wait a little bit
+1750278988.967700 Start new LSS scan-----------------
+1750278988.967751 knownNodes[0].nodeId = 2
+1750278988.967756 Start FastScan for known nodeid 2 (3c9 9 3013002 104)
+1750278988.967846 New cmd 5 received - check it 
+1750278988.967853 EbIndikationNewEbState: line 0, subindex 1, ebstate: 6000
+1750278988.967865 New cmd 4 received - check it 
+1750278988.967869 EbIndikationNewEbState: line 0, subindex 1, ebstate: 8000
+1750278988.967900 EBS_NodeGoOperation: node 2 - setup GIN
+1750278988.973425 virtDeviceWritten: node 2
+1750278988.973531 EBS_Indication_NewNodeAvailable: line 0, node 2, avail: 1
+1750278988.973546 sdoClientWriteIndication sdo 1, 6000:1, 0
+1750278988.973553 sdoClientWriteIndication update handle 0
+1750278988.974509 EBS_Indication_TubeEbState_Changed: canline 0, eta 1, state 2040
+1750278988.992170 EBS_Indication_TubeEbState_Changed: canline 0, eta 1, state 4040
+1750278988.992220 EBS_Indication_TubeEbState_Changed: change to limiting not possible because wrong BAT 4040 state
+1750278989.051961 hbInd line 0: HB Event 2 node 2 nmtState: 5
+1750278989.052011 hbInd line 0: HB Event 1 node 2 nmtState: 5
+1750278989.052016 Node 2 new state detected
+1750278989.052019 State 7
+1750278989.052023 EBSI_NodeHandlingStart line: 0 node: 2
+1750278989.067724 knownNodes[1].nodeId = 0
+1750278989.067786 Start normal FastScan
+1750278991.727697 LSS master indication service 3: errorCode 0 - node detected: 0x3c9 0x9 0x3013002 0x117
+1750278991.727763 old nodeIdAssigned[] 4 0 0 0
+1750278991.727769 try get node id by identity, use 0
+1750278991.727773 new 3c9 9 3013002 117
+1750278991.727777 *** set node id to 3
+1750278991.728215 new nodeIdAssigned[] c 0 0 0
+1750278991.729063 LSS master indication service 1: errorCode 0 - set LSS state waiting 
+1750278991.730853 LSS master indication service 0: errorCode 0 - Non configured Nodes, wait a little bit
+1750278991.731041 hbInd line 0: HB Event 0 node 3 nmtState: 127
+1750278991.731050 Node 3 Bootup empfangen - starte Config
+1750278991.731570 LSS master indication service 0: errorCode 0 - Non configured Nodes, wait a little bit
+1750278991.737736 Start new LSS scan-----------------
+1750278991.737789 knownNodes[0].nodeId = 2 online, ignore
+1750278991.737795 knownNodes[1].nodeId = 3
+1750278991.737799 Start FastScan for known nodeid 3 (3c9 9 3013002 117)
+1750278991.737855 EBS_NodeGoOperation: node 3 - setup GIN
+1750278991.740938 virtDeviceWritten: node 3
+1750278991.741041 EBS_Indication_NewNodeAvailable: line 0, node 3, avail: 1
+1750278991.741059 sdoClientWriteIndication sdo 2, 6000:1, 0
+1750278991.741065 sdoClientWriteIndication update handle 0
+1750278991.742429 EBS_Indication_TubeEbState_Changed: canline 0, eta 2, state 2040
+1750278991.750282 EBS_Indication_TubeEbState_Changed: canline 0, eta 2, state 4040
+1750278991.750333 EBS_Indication_TubeEbState_Changed: change to limiting not possible because wrong BAT 4040 state
+1750278991.825083 hbInd line 0: HB Event 2 node 3 nmtState: 5
+1750278991.825136 hbInd line 0: HB Event 1 node 3 nmtState: 5
+1750278991.825141 Node 3 new state detected
+1750278991.825145 State 7
+1750278991.825148 EBSI_NodeHandlingStart line: 0 node: 3
+1750278991.840006 knownNodes[2].nodeId = 0
+1750278991.840065 Start normal FastScan
+1750278992.150449 EBS_Indication_TubeEbState_Changed: canline 0, eta 2, state 4080
+1750278992.150508 EBS_Indication_TubeEbState_Changed: change to limiting
+1750278992.151823 EBS_Indication_TubeEbControl_Finished: ETA 2, result: 0
+1750278992.151851 sdoClientWriteIndication sdo 2, 6001:1, 0
+1750278992.151857 sdoClientWriteIndication update handle 0
+1750278992.165401 EBS_Indication_TubeEbState_Changed: canline 0, eta 2, state 6080
+1750278992.165449 EBS_Indication_TubeEbState_Changed: change to operating
+1750278992.166767 EBS_Indication_TubeEbControl_Finished: ETA 2, result: 0
+1750278992.166793 sdoClientWriteIndication sdo 2, 6001:1, 0
+1750278992.166799 sdoClientWriteIndication update handle 0
+1750278992.185851 EBS_Indication_TubeEbState_Changed: canline 0, eta 2, state 8080
+1750278993.117510 EBS_Indication_TubeEbState_Changed: canline 0, eta 1, state 4080
+1750278993.117563 EBS_Indication_TubeEbState_Changed: change to limiting
+1750278993.119359 EBS_Indication_TubeEbControl_Finished: ETA 1, result: 0
+1750278993.119392 sdoClientWriteIndication sdo 1, 6001:1, 0
+1750278993.119397 sdoClientWriteIndication update handle 0
+1750278993.132420 EBS_Indication_TubeEbState_Changed: canline 0, eta 1, state 6080
+1750278993.132470 EBS_Indication_TubeEbState_Changed: change to operating
+1750278993.133812 EBS_Indication_TubeEbControl_Finished: ETA 1, result: 0
+1750278993.133841 sdoClientWriteIndication sdo 1, 6001:1, 0
+1750278993.133846 sdoClientWriteIndication update handle 0
+1750278993.153036 EBS_Indication_TubeEbState_Changed: canline 0, eta 1, state 8080
+1750278994.497676 LSS master indication service 3: errorCode 0 - node detected: 0x3c9 0x9 0x3013002 0x118
+1750278994.497735 old nodeIdAssigned[] c 0 0 0
+1750278994.497740 try get node id by identity, use 0
+1750278994.497744 new 3c9 9 3013002 118
+1750278994.497748 *** set node id to 4
+1750278994.498143 new nodeIdAssigned[] 1c 0 0 0
+1750278994.498959 LSS master indication service 1: errorCode 0 - set LSS state waiting 
+1750278994.500700 LSS master indication service 0: errorCode 0 - Non configured Nodes, wait a little bit
+1750278994.500920 hbInd line 0: HB Event 0 node 4 nmtState: 127
+1750278994.500928 Node 4 Bootup empfangen - starte Config
+1750278994.501429 LSS master indication service 0: errorCode 0 - Non configured Nodes, wait a little bit
+1750278994.507110 EBS_NodeGoOperation: node 4 - setup GIN
+1750278994.507649 Start new LSS scan-----------------
+1750278994.507699 knownNodes[0].nodeId = 2 online, ignore
+1750278994.507704 knownNodes[1].nodeId = 3 online, ignore
+1750278994.507709 knownNodes[2].nodeId = 4
+1750278994.507713 Start FastScan for known nodeid 4 (3c9 9 3013002 118)
+1750278994.508840 virtDeviceWritten: node 4
+1750278994.508934 EBS_Indication_NewNodeAvailable: line 0, node 4, avail: 1
+1750278994.508949 sdoClientWriteIndication sdo 3, 6000:1, 0
+1750278994.508955 sdoClientWriteIndication update handle 0
+1750278994.510561 EBS_Indication_TubeEbState_Changed: canline 0, eta 3, state 2040
+1750278994.520476 EBS_Indication_TubeEbState_Changed: canline 0, eta 3, state 4080
+1750278994.520508 EBS_Indication_TubeEbState_Changed: change to limiting
+1750278994.521773 EBS_Indication_TubeEbControl_Finished: ETA 3, result: 0
+1750278994.521786 sdoClientWriteIndication sdo 3, 6001:1, 0
+1750278994.521791 sdoClientWriteIndication update handle 0
+1750278994.535441 EBS_Indication_TubeEbState_Changed: canline 0, eta 3, state 6080
+1750278994.535479 EBS_Indication_TubeEbState_Changed: change to operating
+1750278994.536744 EBS_Indication_TubeEbControl_Finished: ETA 3, result: 0
+1750278994.536792 sdoClientWriteIndication sdo 3, 6001:1, 0
+1750278994.536798 sdoClientWriteIndication update handle 0
+1750278994.555373 EBS_Indication_TubeEbState_Changed: canline 0, eta 3, state 8080
+1750278994.595271 hbInd line 0: HB Event 2 node 4 nmtState: 5
+1750278994.595345 hbInd line 0: HB Event 1 node 4 nmtState: 5
+1750278994.595350 Node 4 new state detected
+1750278994.595354 State 7
+1750278994.595357 EBSI_NodeHandlingStart line: 0 node: 4
+1750278994.607777 knownNodes[3].nodeId = 0
+1750278994.607847 Start normal FastScan
+1750278997.267687 LSS master indication service 3: errorCode 0 - node detected: 0x3c9 0x9 0x3013002 0x145
+1750278997.267754 old nodeIdAssigned[] 1c 0 0 0
+1750278997.267760 try get node id by identity, use 0
+1750278997.267764 new 3c9 9 3013002 145
+1750278997.267768 *** set node id to 5
+1750278997.268137 new nodeIdAssigned[] 3c 0 0 0
+1750278997.269418 LSS master indication service 1: errorCode 0 - set LSS state waiting 
+1750278997.271229 LSS master indication service 0: errorCode 0 - Non configured Nodes, wait a little bit
+1750278997.271430 hbInd line 0: HB Event 0 node 5 nmtState: 127
+1750278997.271442 Node 5 Bootup empfangen - starte Config
+1750278997.271938 LSS master indication service 0: errorCode 0 - Non configured Nodes, wait a little bit
+1750278997.277659 Start new LSS scan-----------------
+1750278997.277708 knownNodes[0].nodeId = 2 online, ignore
+1750278997.277713 knownNodes[1].nodeId = 3 online, ignore
+1750278997.277717 knownNodes[2].nodeId = 4 online, ignore
+1750278997.277722 knownNodes[3].nodeId = 5
+1750278997.277725 Start FastScan for known nodeid 5 (3c9 9 3013002 145)
+1750278997.278113 EBS_NodeGoOperation: node 5 - setup GIN
+1750278997.280792 virtDeviceWritten: node 5
+1750278997.280927 EBS_Indication_NewNodeAvailable: line 0, node 5, avail: 1
+1750278997.280946 sdoClientWriteIndication sdo 4, 6000:1, 0
+1750278997.280952 sdoClientWriteIndication update handle 0
+1750278997.282325 EBS_Indication_TubeEbState_Changed: canline 0, eta 4, state 4080
+1750278997.282351 EBS_Indication_TubeEbState_Changed: change to limiting
+1750278997.283856 EBS_Indication_TubeEbControl_Finished: ETA 4, result: 0
+1750278997.283910 sdoClientWriteIndication sdo 4, 6001:1, 0
+1750278997.283934 sdoClientWriteIndication update handle 0
+1750278997.297006 EBS_Indication_TubeEbState_Changed: canline 0, eta 4, state 6080
+1750278997.297055 EBS_Indication_TubeEbState_Changed: change to operating
+1750278997.298841 EBS_Indication_TubeEbControl_Finished: ETA 4, result: 0
+1750278997.298870 sdoClientWriteIndication sdo 4, 6001:1, 0
+1750278997.298875 sdoClientWriteIndication update handle 0
+1750278997.317069 EBS_Indication_TubeEbState_Changed: canline 0, eta 4, state 8080
+1750278997.356777 hbInd line 0: HB Event 2 node 5 nmtState: 5
+1750278997.356829 hbInd line 0: HB Event 1 node 5 nmtState: 5
+1750278997.356834 Node 5 new state detected
+1750278997.356838 State 7
+1750278997.356841 EBSI_NodeHandlingStart line: 0 node: 5
+1750278997.377688 knownNodes[4].nodeId = 0
+1750278997.377739 Start normal FastScan
+1750279000.037688 LSS master indication service 3: errorCode 0 - node detected: 0x3c9 0x9 0x3013002 0x14f
+1750279000.037761 old nodeIdAssigned[] 3c 0 0 0
+1750279000.037767 try get node id by identity, use 0
+1750279000.037770 new 3c9 9 3013002 14f
+1750279000.037774 *** set node id to 6
+1750279000.038193 new nodeIdAssigned[] 7c 0 0 0
+1750279000.039025 LSS master indication service 1: errorCode 0 - set LSS state waiting 
+1750279000.040595 hbInd line 0: HB Event 0 node 6 nmtState: 127
+1750279000.040633 Node 6 Bootup empfangen - starte Config
+1750279000.041089 LSS master indication service 0: errorCode 0 - Non configured Nodes, wait a little bit
+1750279000.046951 EBS_NodeGoOperation: node 6 - setup GIN
+1750279000.047659 Start new LSS scan-----------------
+1750279000.047684 knownNodes[0].nodeId = 2 online, ignore
+1750279000.047688 knownNodes[1].nodeId = 3 online, ignore
+1750279000.047692 knownNodes[2].nodeId = 4 online, ignore
+1750279000.047696 knownNodes[3].nodeId = 5 online, ignore
+1750279000.047700 knownNodes[4].nodeId = 6
+1750279000.047730 Start FastScan for known nodeid 6 (3c9 9 3013002 14f)
+1750279000.048840 virtDeviceWritten: node 6
+1750279000.048960 EBS_Indication_NewNodeAvailable: line 0, node 6, avail: 1
+1750279000.048978 sdoClientWriteIndication sdo 5, 6000:1, 0
+1750279000.048984 sdoClientWriteIndication update handle 0
+1750279000.050581 EBS_Indication_TubeEbState_Changed: canline 0, eta 5, state 2040
+1750279000.059749 EBS_Indication_TubeEbState_Changed: canline 0, eta 5, state 4080
+1750279000.059801 EBS_Indication_TubeEbState_Changed: change to limiting
+1750279000.061124 EBS_Indication_TubeEbControl_Finished: ETA 5, result: 0
+1750279000.061167 sdoClientWriteIndication sdo 5, 6001:1, 0
+1750279000.061173 sdoClientWriteIndication update handle 0
+1750279000.074668 EBS_Indication_TubeEbState_Changed: canline 0, eta 5, state 6080
+1750279000.074722 EBS_Indication_TubeEbState_Changed: change to operating
+1750279000.076020 EBS_Indication_TubeEbControl_Finished: ETA 5, result: 0
+1750279000.076063 sdoClientWriteIndication sdo 5, 6001:1, 0
+1750279000.076070 sdoClientWriteIndication update handle 0
+1750279000.095114 EBS_Indication_TubeEbState_Changed: canline 0, eta 5, state 8080
+1750279000.134468 hbInd line 0: HB Event 2 node 6 nmtState: 5
+1750279000.134520 hbInd line 0: HB Event 1 node 6 nmtState: 5
+1750279000.134524 Node 6 new state detected
+1750279000.134528 State 7
+1750279000.134531 EBSI_NodeHandlingStart line: 0 node: 6
+1750279000.147671 knownNodes[5].nodeId = 0
+1750279000.147720 Start normal FastScan
+1750279002.807718 LSS master indication service 3: errorCode 0 - node detected: 0x3c9 0x9 0x3013002 0x152
+1750279002.807794 old nodeIdAssigned[] 7c 0 0 0
+1750279002.807801 try get node id by identity, use 0
+1750279002.807804 new 3c9 9 3013002 152
+1750279002.807808 *** set node id to 7
+1750279002.808192 new nodeIdAssigned[] fc 0 0 0
+1750279002.809546 LSS master indication service 1: errorCode 0 - set LSS state waiting 
+1750279002.811296 hbInd line 0: HB Event 0 node 7 nmtState: 127
+1750279002.811330 Node 7 Bootup empfangen - starte Config
+1750279002.817956 EBS_NodeGoOperation: node 7 - setup GIN
+1750279002.819852 virtDeviceWritten: node 7
+1750279002.820008 EBS_Indication_NewNodeAvailable: line 0, node 7, avail: 1
+1750279002.820050 sdoClientWriteIndication sdo 6, 6000:1, 0
+1750279002.820057 sdoClientWriteIndication update handle 0
+1750279002.821377 EBS_Indication_TubeEbState_Changed: canline 0, eta 6, state 2040
+1750279002.830438 EBS_Indication_TubeEbState_Changed: canline 0, eta 6, state 4080
+1750279002.830488 EBS_Indication_TubeEbState_Changed: change to limiting
+1750279002.831853 EBS_Indication_TubeEbControl_Finished: ETA 6, result: 0
+1750279002.831909 sdoClientWriteIndication sdo 6, 6001:1, 0
+1750279002.831935 sdoClientWriteIndication update handle 0
+1750279002.845379 EBS_Indication_TubeEbState_Changed: canline 0, eta 6, state 6080
+1750279002.845428 EBS_Indication_TubeEbState_Changed: change to operating
+1750279002.846743 EBS_Indication_TubeEbControl_Finished: ETA 6, result: 0
+1750279002.846771 sdoClientWriteIndication sdo 6, 6001:1, 0
+1750279002.846776 sdoClientWriteIndication update handle 0
+1750279002.865375 EBS_Indication_TubeEbState_Changed: canline 0, eta 6, state 8080
+1750279002.905118 hbInd line 0: HB Event 2 node 7 nmtState: 5
+1750279002.905172 hbInd line 0: HB Event 1 node 7 nmtState: 5
+1750279002.905177 Node 7 new state detected
+1750279002.905181 State 7
+1750279002.905184 EBSI_NodeHandlingStart line: 0 node: 7
+1750279013.151850 EBS_Indication_TubeEbState_Changed: canline 0, eta 2, state 80c0
+1750279013.158813 EBS_Indication_TubeEbState_Changed: canline 0, eta 1, state 80c0
+1750279013.160636 EBS_Indication_TubeEbState_Changed: canline 0, eta 5, state 80c0
+1750279013.483185 EBS_Indication_TubeEbState_Changed: canline 0, eta 4, state 80c0
+1750279013.671357 EBS_Indication_TubeEbState_Changed: canline 0, eta 6, state 80c0
+1750279013.961830 EBS_Indication_TubeEbState_Changed: canline 0, eta 3, state 80c0
+1750279168.291758 EBS_Indication_TubeEbState_Changed: canline 0, eta 2, state 8040
+1750279172.676812 EBS_Indication_TubeEbState_Changed: canline 0, eta 2, state 8080
+1750279198.738645 EBS_Indication_TubeEbState_Changed: canline 0, eta 2, state 80c0
